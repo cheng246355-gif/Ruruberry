@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css">
+</head>
+<body>
+    <!-- ==============================================
+    #                                             #
+    #                    HEADER                    #
+    #                                             #
+    #=============================================== -->
+    <t-header></t-header>
+
+    <!-- ==============================================
+    #                                             #
+    #                  MAIN CONTENT                #
+    #                                             #
+    #=============================================== -->
+    <main class="account-main">
+        <section class="page-hero">
+            <h1>My Account</h1>
+            <p>Welcome back! Manage your orders, settings, and profile information here.</p>
+        </section>
+        
+        <div id="dashboard" class="dashboard-section">
+            <h2>Dashboard</h2>
+            <p>Hello, <strong>Username</strong>!</p>
+            <p>From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
+            <div class="dashboard-summary">
+                <div class="summary-box">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <h3>Total Orders</h3>
+                    <p>5</p>
+                </div>
+                <div class="summary-box">
+                    <span class="material-symbols-outlined">local_shipping</span>
+                    <h3>Pending Orders</h3>
+                    <p>1</p>
+                </div>
+                <div class="summary-box">
+                    <span class="material-symbols-outlined">favorite</span>
+                    <h3>Wishlist Items</h3>
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="account-container">
+            <aside class="account-nav">
+                <ul>
+                    <li><a href="#orders">Orders</a></li>
+                    <li><a href="#addresses">Addresses</a></li>
+                    <li><a href="#profile">Profile Details</a></li>
+                    <li><a href="#logout">Logout</a></li>
+                </ul>
+            </aside>
+            <section class="account-content">
+                <div id="orders" class="account-section">
+                    <h2>Order History</h2>
+                    <div class="order">
+                        <div class="order-header">
+                            <div class="order-info">
+                                <span>Order #12345</span>
+                                <span>Placed on: 2025-11-10</span>
+                            </div>
+                            <div class="order-status">
+                                <span>Status: Shipped</span>
+                            </div>
+                        </div>
+                        <div class="order-body">
+                            <div class="order-item">
+                                <img src="images/Products/1-600x800.jpg" alt="Product Image" loading="lazy">
+                                <div class="item-details">
+                                    <p>Product Name</p>
+                                    <p>Quantity: 1</p>
+                                    <p>Price: $25.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>You have no other orders to show.</p>
+                </div>
+                <div id="addresses" class="account-section">
+                    <h2>Saved Addresses</h2>
+                    <div class="address-card">
+                        <h3>Default Shipping Address</h3>
+                        <p>123 Main St, Anytown, USA 12345</p>
+                        <div class="address-actions">
+                            <a href="#" class="btn-secondary">Edit</a>
+                            <a href="#" class="btn-danger">Delete</a>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Add New Address</button>
+                </div>
+                <div id="profile" class="account-section">
+                    <h2>Profile Details</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="acc-name">Name</label>
+                            <input type="text" id="acc-name" name="acc-name" value="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="acc-email">Email</label>
+                            <input type="email" id="acc-email" name="acc-email" value="user@example.com">
+                        </div>
+                        <button type="submit" class="btn-primary">Save Changes</button>
+                    </form>
+                    <hr class="divider">
+                    <h2>Change Password</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="current-password">Current Password</label>
+                            <input type="password" id="current-password" name="current-password">
+                        </div>
+                        <div class="form-group">
+                            <label for="new-password">New Password</label>
+                            <input type="password" id="new-password" name="new-password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm New Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password">
+                        </div>
+                        <button type="submit" class="btn-primary">Change Password</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ==============================================
+    #                                             #
+    #                    FOOTER                    #
+    #                                             #
+    #=============================================== -->
+    <t-footer></t-footer>
+
+    <script src="script.js"></script>
+    <t-return-to-top></t-return-to-top>
+</body>
+</html>

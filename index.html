@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css">
+</head>
+
+<body>
+    <div class="loading-overlay">
+        <img src="./images/Logo/RuruberryLogo_Normal Size-1000x189.png" alt="Ruruberry Logo" class="loading-logo" loading="lazy">
+    </div>
+    <!-- ============================================== 
+    #                                             #
+    #                    HEADER                    #
+    #                                             #
+    #=============================================== -->
+    <t-header></t-header>
+
+    <!-- ==============================================
+    #                                             #
+    #                  HERO SECTION                #
+    #                                             #
+    #=============================================== -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide">
+                <img srcset="images/Home/b1-1671x939.jpg 1671w, images/Home/b1-3342x1878.jpg 3342w"
+                     sizes="(max-width: 768px) 100vw, 100vw"
+                     src="images/Home/b1-3342x1878.jpg" alt="Hero Image 1" class="hero-img">
+            </div>
+            <div class="slide">
+                <img srcset="images/Home/b2-1671x939.jpg 1671w, images/Home/b2-3342x1878.jpg 3342w"
+                     sizes="(max-width: 768px) 100vw, 100vw"
+                     src="images/Home/b2-3342x1878.jpg" alt="Hero Image 2" class="hero-img">
+            </div>
+            <div class="slide">
+                <img srcset="images/Home/Banner3-1671x939.jpg 1671w, images/Home/Banner3-3342x1878.jpg 3342w"
+                     sizes="(max-width: 768px) 100vw, 100vw"
+                     src="images/Home/Banner3-3342x1878.jpg" alt="Hero Image 3" class="hero-img">
+            </div>
+        </div>
+        <div class="hero-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- ==============================================
+    #                                             #
+    #                    MARQUEE                   #
+    #                                             #
+    #=============================================== -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span class="marquee-item">RUDIMENT. PROGRESS. PERFECTION</span>
+            <span class="marquee-item">RUDIMENT. PROGRESS. PERFECTION</span>
+            <span class="marquee-item">RUDIMENT. PROGRESS. PERFECTION</span>
+            <span class="marquee-item">RUDIMENT. PROGRESS. PERFECTION</span>
+        </div>
+    </div>
+
+    <!-- ==============================================
+    #                                             #
+    #                PHILOSOPHY SECTION            #
+    #                                             #
+    #=============================================== -->
+    <section class="philosophy">
+        <h2>Our Philosophy</h2>
+        <div class="philosophy-grid">
+            <div class="philosophy-card">
+                <div class="philosophy-image">
+                    <img srcset="images/Home/philosophy 1-500w.jpg 500w, images/Home/philosophy 1.jpg 1000w"
+                         sizes="(max-width: 768px) 100vw, 500px"
+                         src="images/Home/philosophy 1.jpg" alt="A modern laboratory setting." style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+                <div class="philosophy-text">
+                    <h4>High-Performance Formulas</h4>
+                    <p>Cutting-edge skincare with scientifically-validated ingredients for visible results</p>
+                </div>
+            </div>
+            <div class="philosophy-card">
+                <div class="philosophy-image">
+                    <img srcset="images/Home/philosophy 2-500w.jpg 500w, images/Home/philosophy 2.jpg 1000w"
+                         sizes="(max-width: 768px) 100vw, 500px"
+                         src="images/Home/philosophy 2.jpg" alt="A scientific illustration of a plant." style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+                <div class="philosophy-text">
+                    <h4>Ethically Minded</h4>
+                    <p>Beauty with a conscience: prioritizing cruelty-free and ethical sourcing</p>
+                </div>
+            </div>
+            <div class="philosophy-card">
+                <div class="philosophy-image">
+                    <img srcset="images/Home/philosophy 3-500w.jpg 500w, images/Home/philosophy 3.jpg 1000w"
+                         sizes="(max-width: 768px) 100vw, 500px"
+                         src="images/Home/philosophy 3.jpg" alt="A person with glowing, healthy skin." style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                </div>
+                <div class="philosophy-text">
+                    <h4>Results-Driven Solutions</h4>
+                    <p>Targeted treatments designed for effective and lasting skincare results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+    #                                             #
+    #                  BESTSELLERS                 #
+    #                                             #
+    #=============================================== -->
+    <section class="bestsellers">
+        <div class="section-header">
+            <div>
+                <h2>Bestsellers</h2>
+                <p>Start your journey with these beginner-friendly formulas</p>
+            </div>
+            <div class="nav-arrows">
+                <button class="arrow-btn" aria-label="Previous slide"><i class="ph-bold ph-caret-left" aria-hidden="true"></i></button>
+                <button class="arrow-btn" aria-label="Next slide"><i class="ph-bold ph-caret-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <a href="product.html">
+                    <div class="product-image">
+                        <div class="product-badge badge-hot">Hot</div>
+                        <img src="images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid" loading="lazy">
+                    </div>
+                    <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
+                </a>
+                <p class="product-type">All skin types</p>
+                <p class="product-description">A hybrid AHA toner that helps with tone and acne without irritation</p>
+                <p class="product-price">RM 29</p>
+            </div>
+            <div class="product-card">
+                <a href="product.html">
+                    <div class="product-image">
+                        <div class="product-badge badge-new">New</div>
+                        <img src="images/Products/Crystal Expert_01-1200x1600.jpg" alt="Overnight Renewing Expert Crystal-A 0.05%" loading="lazy">
+                    </div>
+                    <h3 class="product-title">Overnight Renewing Expert Crystal-A 0.05%</h3>
+                </a>
+                <p class="product-type">All skin types</p>
+                <p class="product-description">A gentle retinol sealing collagen boost and smoothness</p>
+                <p class="product-price">RM 75</p>
+            </div>
+            <div class="product-card">
+                <a href="product.html">
+                    <div class="product-image">
+                        <img src="images/Products/2AA_01-1200x1600.jpg" alt="2% Alpha Arbutin" loading="lazy">
+                    </div>
+                    <h3 class="product-title">2% Alpha Arbutin</h3>
+                </a>
+                <p class="product-type">All skin types</p>
+                <p class="product-description">A tyrosinase inhibitor that minimizes the appearance of post-breakout marks and skin tone</p>
+                <p class="product-price">RM 75</p>
+            </div>
+            <div class="product-card">
+                <a href="product.html">
+                    <div class="product-image">
+                        <img src="images/Products/OatPanthenol_03-1200x1600.jpg" alt="Product 4" loading="lazy">
+                    </div>
+                    <h3 class="product-title">Oat-Panthenol Essence</h3>
+                </a>
+                <p class="product-type">Combination skin</p>
+                <p class="product-description">A soothing essence with oat and panthenol to calm and hydrate sensitive skin.</p>
+                <p class="product-price">RM 50</p>
+            </div>
+            <div class="product-card">
+                <a href="product.html">
+                    <div class="product-image">
+                        <div class="product-badge badge-hot">Hot</div>
+                        <img src="images/Products/CleansingGel_01-1200x1600.jpg" alt="Product 5" loading="lazy">
+                    </div>
+                    <h3 class="product-title">Gentle Fresh Cleansing Gel</h3>
+                </a>
+                <p class="product-type">Dry skin</p>
+                <p class="product-description">A mild, pH-balanced cleansing gel that effectively removes impurities without stripping skin.</p>
+                <p class="product-price">RM 104</p>
+            </div>
+            <div class="product-card">
+                <a href="product.html">
+                    <div class="product-image">
+                        <div class="product-badge badge-new">New</div>
+                        <img src="images/Products/1-1200x1600 (4).jpg" alt="Product 6" loading="lazy">
+                    </div>
+                    <h3 class="product-title">Daily Sunscreen</h3>
+                </a>
+                <p class="product-type">Oily skin</p>
+                <p class="product-description">Lightweight, non-greasy daily sunscreen with broad-spectrum SPF50+ protection.</p>
+                <p class="product-price">RM 62</p>
+            </div>
+        </div>
+        <div class="see-more">
+            <a href="shop.html" class="btn-secondary">See more</a>
+        </div>
+    </section>
+
+    <!-- ==============================================
+    #                                             #
+    #                ROUTINE SECTION               #
+    #                                             #
+    #=============================================== -->
+    <section class="routine-section">
+        <h2>Find Your Perfect Routine</h2>
+        <p>Take our 2-minute skin quiz to get personalized product recommendations based on your skin type, concerns, and climate.</p>
+        <button class="btn-primary">Start Skin Quiz</button>
+    </section>
+
+    <!-- ==============================================
+    #                                             #
+    #                  TESTIMONIALS                #
+    #                                             #
+    #=============================================== -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <p class="testimonials-subtitle">Real reviews from real customers</p>
+        <div class="testimonials-container">
+            <button class="testimonial-arrow prev" aria-label="Previous testimonial"><i class="ph-bold ph-caret-left" aria-hidden="true"></i></button>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a Malaysian brand I trust! The serum is super light."</p>
+                    <cite class="testimonial-author">Alice</cite>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a Malaysian brand I trust! The serum is super light."</p>
+                    <cite class="testimonial-author">Alice</cite>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a Malaysian brand I trust! The serum is super light."</p>
+                    <cite class="testimonial-author">Alice</cite>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a Malaysian brand I trust! The serum is super light."</p>
+                    <cite class="testimonial-author">Alice</cite>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a Malaysian brand I trust! The serum is super light."</p>
+                    <cite class="testimonial-author">Alice</cite>
+                </div>
+            </div>
+            <button class="testimonial-arrow next" aria-label="Next testimonial"><i class="ph-bold ph-caret-right" aria-hidden="true"></i></button>
+        </div>
+    </section>
+
+    <!-- ==============================================
+    #                                             #
+    #                   NEWSLETTER                 #
+    #                                             #
+    #=============================================== -->
+    <section class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Get skincare tips, new product launches, and exclusive offers</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- ==============================================
+    #                                             #
+    #                    FOOTER                    #
+    #                                             #
+    #=============================================== -->
+    <t-footer></t-footer>
+
+    <script src="script.js"></script>
+    <t-return-to-top></t-return-to-top>
+</body>
+</html>

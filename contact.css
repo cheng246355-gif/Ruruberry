@@ -1,0 +1,336 @@
+/*==============================================
+#*                                             *
+#*                  CONTACT MAIN                *
+#*                                             *
+#*==============================================*/
+
+.contact-main {
+    padding: 2rem 120px;
+    background-color: #F7F8FA; /* Light gray background for the whole section */
+}
+
+.contact-main h3 {
+    font-weight: var(--fw-semibold);
+    margin-bottom: 1.5rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.contact-info, .contact-form-container {
+    flex: 1;
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid #ECEEEF;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.info-item {
+    margin-bottom: 2rem;
+}
+
+.info-item-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.75rem;
+}
+
+.info-item-header .material-symbols-outlined {
+    font-size: var(--icon-size-md);
+    color: var(--color-primary);
+}
+
+.contact-link {
+    display: block;
+    margin-left: 34px; /* Align with text in header */
+    text-decoration: none;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-left: 34px; /* Align with text in header */
+}
+
+.social-icons a {
+    color: var(--color-accent);
+    font-size: var(--icon-size-lg);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+/*==============================================
+#*                                             *
+#*                  FORM                        *
+#*                                             *
+#*==============================================*/
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-body);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-h4);
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ECEEEF;
+    border-radius: 24px;
+    background-color: #F7F8FA;
+    transition: border-color 0.3s;
+    font-family: var(--font-body);
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: var(--color-primary);
+    outline: 3px solid rgba(162, 212, 229, 0.5);
+    outline-offset: 1px;
+}
+
+.contact-form .btn-primary {
+    width: 100%;
+}
+
+/*==============================================
+#*                                             *
+#*                  MAP SECTION                 *
+#*                                             *
+#*==============================================*/
+
+.map-section {
+    text-align: center;
+    padding: 2rem 120px;
+}
+
+.map-section p {
+    color: #6E8A9D;
+}
+
+.map-content-wrapper {
+    background-color: #ECEEEF;
+    border-radius: 24px;
+    padding: 40px;
+}
+
+.map-container {
+    border-radius: 24px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 24px;
+}
+
+/*==============================================
+#*                                             *
+#*                  BUSINESS HOURS              *
+#*                                             *
+#*==============================================*/
+
+.business-hours-wrapper {
+    padding: 2rem 120px;
+}
+
+.business-hours-section {
+    padding: 32px;
+    border-radius: 24px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.business-hours {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hours-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.hours-box {
+    background-color: #F7F8FA;
+    border-radius: 24px;
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.hours-box h4 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ECEEEF;
+    padding-bottom: 1rem;
+}
+
+.hours-box p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hours-box p:not(:last-child) {
+    border-bottom: 1px solid #ECEEEF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hours-box p span:last-child {
+    color: #6E8A9D;
+}
+
+/*==============================================
+#*                                             *
+#*                  RETAILERS SECTION           *
+#*                                             *
+#*==============================================*/
+
+.retailers-section {
+    text-align: center;
+    padding: 2rem 120px;
+    margin: auto;
+}
+
+.retailers-section h2 {
+    margin-bottom: 0.5rem;
+}
+
+.retailers-section p {
+    font-size: var(--fs-body);
+    color: #6E8A9D;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+.retailers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.retailer-card {
+    background-color: white;
+    border-radius: 24px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.retailer-card img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.retailer-card p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.retailer-card .btn-secondary {
+    background-color: #A2D4E5;
+    color: #1B1C1E;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: var(--fs-body);
+    font-weight: var(--fw-regular);
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.retailer-card .btn-secondary:hover {
+    background-color: #8ecbe0;
+}
+
+/*==============================================
+#*                                             *
+#*                  MEDIA QUERIES               *
+#*                                             *
+#*==============================================*/
+
+@media (max-width: 1024px) {
+    .contact-main, .map-section, .business-hours-wrapper, .retailers-section {
+        padding: 2rem 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-main, .map-section, .business-hours-wrapper, .retailers-section {
+        padding: 2rem 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hours-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .map-content-wrapper {
+        padding: 30px;
+    }
+    .map-container iframe {
+        height: 350px;
+    }
+    .business-hours-section {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-main, .map-section, .business-hours-wrapper, .retailers-section {
+        padding: 1.5rem 15px;
+    }
+    .map-content-wrapper {
+        padding: 20px;
+    }
+    .map-container iframe {
+        height: 300px;
+    }
+    .business-hours-section {
+        padding: 20px;
+    }
+}
