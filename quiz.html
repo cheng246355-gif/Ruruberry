@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Take our 2-minute skin quiz to get personalized product recommendations based on your skin type, concerns, and climate.">
+    <title>Skin Routine Builder - Ruruberry Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css">
+</head>
+
+<body>
+
+    <!-- ============================================== 
+    #                                             #
+    #                    HEADER                    #
+    #                                             #
+    #=============================================== -->
+    <t-header></t-header>
+
+    <div class="app">
+        <div class="quiz-container">
+
+            <!-- Progress Bar -->
+            <div class="progress-container hidden" id="progressContainer">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p class="progress-text" id="progressText">Step 1 of 3</p>
+            </div>
+
+            <!-- Welcome Screen -->
+            <div class="welcome-screen" id="welcomeScreen">
+                <div class="quiz-icon">✨</div>
+                <h1>Discover Your Perfect Skin Routine</h1>
+                <p>Take our 2-minute skin quiz to get personalized product recommendations based on your skin type,
+                    concerns, and climate.</p>
+                <button class="btn-primary" id="startQuizBtn">Start Quiz</button>
+            </div>
+
+            <!-- Question 1: Skin Type -->
+            <div class="question-screen" id="question1">
+                <h2 class="question-title">What's your skin type?</h2>
+                <p class="question-subtitle">Select the option that best describes your skin</p>
+
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" id="oily" name="skinType" value="oily">
+                        <label for="oily" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Oily</strong>
+                                <div class="option-description">Shiny appearance, enlarged pores, prone to breakouts
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="dry" name="skinType" value="dry">
+                        <label for="dry" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Dry</strong>
+                                <div class="option-description">Tight feeling, flaky patches, rough texture</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="combination" name="skinType" value="combination">
+                        <label for="combination" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Combination</strong>
+                                <div class="option-description">Oily T-zone, dry or normal cheeks</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="sensitive" name="skinType" value="sensitive">
+                        <label for="sensitive" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Sensitive</strong>
+                                <div class="option-description">Easily irritated, reactive to products, redness-prone
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="normal" name="skinType" value="normal">
+                        <label for="normal" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Normal</strong>
+                                <div class="option-description">Balanced, not too oily or dry, minimal concerns</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="btn-secondary" id="backBtn1">Back</button>
+                    <button class="btn-primary" id="nextBtn1" disabled>Next</button>
+                </div>
+            </div>
+
+            <!-- Question 2: Skin Concerns -->
+            <div class="question-screen" id="question2">
+                <h2 class="question-title">What are your main skin concerns?</h2>
+                <p class="question-subtitle">Select all that apply (up to 3)</p>
+
+                <div class="options-container">
+                    <div class="option">
+                        <input type="checkbox" id="acne" name="concerns" value="acne">
+                        <label for="acne" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Acne & Breakouts</strong>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="checkbox" id="aging" name="concerns" value="aging">
+                        <label for="aging" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Aging & Fine Lines</strong>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="checkbox" id="darkspots" name="concerns" value="darkspots">
+                        <label for="darkspots" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Dark Spots & Pigmentation</strong>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="checkbox" id="dryness" name="concerns" value="dryness">
+                        <label for="dryness" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Dehydration & Moisture Loss</strong>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="checkbox" id="redness" name="concerns" value="redness">
+                        <label for="redness" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Redness & Sensitivity</strong>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="checkbox" id="dullness" name="concerns" value="dullness">
+                        <label for="dullness" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Dullness & Uneven Texture</strong>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="btn-secondary" id="backBtn2">Back</button>
+                    <button class="btn-primary" id="nextBtn2" disabled>Next</button>
+                </div>
+            </div>
+
+            <!-- Question 3: Climate -->
+            <div class="question-screen" id="question3">
+                <h2 class="question-title">What's your climate like?</h2>
+                <p class="question-subtitle">This helps us recommend products suited to your environment</p>
+
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" id="humid" name="climate" value="humid">
+                        <label for="humid" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Humid & Tropical</strong>
+                                <div class="option-description">Hot, sticky, high moisture in the air</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="dry-climate" name="climate" value="dry">
+                        <label for="dry-climate" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Dry & Arid</strong>
+                                <div class="option-description">Low humidity, desert-like conditions</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="cold" name="climate" value="cold">
+                        <label for="cold" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Cold & Harsh</strong>
+                                <div class="option-description">Winter conditions, wind, low temperatures</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" id="temperate" name="climate" value="temperate">
+                        <label for="temperate" class="option-label">
+                            <div class="option-icon"></div>
+                            <div class="option-text">
+                                <strong>Temperate & Mild</strong>
+                                <div class="option-description">Moderate, balanced weather year-round</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="btn-secondary" id="backBtn3">Back</button>
+                    <button class="btn-primary" id="submitQuizBtn" disabled>See Results</button>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div class="results-screen" id="resultsScreen">
+                <div class="results-header">
+                    <h2>Your Personalized Skincare Routine</h2>
+                    <p>Based on your answers, here's your customized routine</p>
+                </div>
+
+                <div class="skin-profile" id="skinProfile"></div>
+
+                <div class="routine-section">
+                    <h3><span class="routine-icon">☀️</span> Morning Routine</h3>
+                    <div class="product-list" id="morningRoutine"></div>
+                </div>
+
+                <div class="routine-section">
+                    <h3><span class="routine-icon">🌙</span> Evening Routine</h3>
+                    <div class="product-list" id="eveningRoutine"></div>
+                </div>
+
+                <div class="restart-container">
+                    <button class="btn-primary" id="restartQuizBtn">Take Quiz Again</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
