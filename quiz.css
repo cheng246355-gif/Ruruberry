@@ -2,13 +2,11 @@
  *                  LAYOUT                       
  *==============================================*/
 
-/* Remove body padding for quiz page */
-body {
-  padding-top: 0 !important;
-}
+/* Remove body padding override to respect global header spacing */
+/* body { padding-top: 0 !important; } */
 
 .app {
-  height: 100vh;
+  height: calc(100vh - 110px);
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -31,7 +29,7 @@ body {
   padding: 48px;
   max-width: 1200px;
   width: 100%;
-  max-height: calc(100vh - 40px);
+  max-height: calc(100vh - 150px);
   overflow-y: auto;
   animation: slideUp 0.6s ease-out;
 
@@ -290,9 +288,56 @@ button {
   font-family: var(--font-body);
 }
 
+/* Primary Button - High Visibility */
+.btn-primary {
+  background-color: var(--color-dark) !important;
+  color: var(--color-white) !important;
+  border: 2px solid var(--color-dark) !important;
+  font-weight: var(--fw-bold);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent) !important;
+  border-color: var(--color-accent) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
 .btn-primary:disabled {
-  opacity: 0.5;
+  background-color: var(--color-border) !important;
+  border-color: var(--color-border) !important;
+  color: var(--color-accent) !important;
+  box-shadow: none;
   cursor: not-allowed;
+  opacity: 0.7;
+  transform: none;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--color-dark);
+  color: var(--color-dark);
+  font-weight: var(--fw-medium);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-light);
+  border-color: var(--color-dark);
+  transform: translateY(-2px);
+}
+
+/* Specific Button Enhancements */
+#startQuizBtn {
+  font-size: 1.1rem;
+  padding: 18px 48px;
+  letter-spacing: 0.5px;
+}
+
+#restartQuizBtn {
+  min-width: 200px;
 }
 
 /*==============================================
@@ -398,7 +443,7 @@ button {
   justify-content: center;
   width: 32px;
   height: 32px;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  background: var(--color-dark);
   color: white;
   border-radius: 9999px;
   font-weight: var(--fw-bold);
@@ -411,7 +456,7 @@ button {
   font-weight: var(--fw-semibold);
   color: var(--color-dark);
   margin-bottom: 4px;
-  font-family: var(--font-subheading);
+  font-family: var(--font-heading);
 }
 
 .product-description {
