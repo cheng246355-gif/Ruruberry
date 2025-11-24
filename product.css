@@ -13,22 +13,30 @@
 .product-image-gallery {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    gap: 1rem; /* Space between main image and thumbnails */
+    align-items: flex-start;
+    /* Align items to the left */
+    gap: 1rem;
+    /* Space between main image and thumbnails */
 }
 
 .thumbnails {
     display: flex;
-    flex-direction: row; /* Arrange thumbnails horizontally */
-    justify-content: flex-start; /* Align the thumbnails to the left */
+    flex-direction: row;
+    /* Arrange thumbnails horizontally */
+    justify-content: flex-start;
+    /* Align the thumbnails to the left */
     gap: 1rem;
-    width: 100%; /* Ensure thumbnails span full width */
-    flex-wrap: wrap; /* Allow thumbnails to wrap on smaller screens */
+    width: 100%;
+    /* Ensure thumbnails span full width */
+    flex-wrap: wrap;
+    /* Allow thumbnails to wrap on smaller screens */
 }
 
 .thumbnail {
-    width: 80px; /* Fixed width for each thumbnail */
-    height: auto; /* Maintain aspect ratio */
+    width: 80px;
+    /* Fixed width for each thumbnail */
+    height: auto;
+    /* Maintain aspect ratio */
     cursor: pointer;
     border: 2px solid transparent;
     border-radius: 24px;
@@ -60,7 +68,8 @@
 
 .stock-status {
     font-size: 0.9rem;
-    color: #4CAF50; /* Green for in stock */
+    color: #4CAF50;
+    /* Green for in stock */
     margin-bottom: 1rem;
     font-weight: bold;
 }
@@ -173,11 +182,13 @@
 /* --- Responsive Styles --- */
 
 @media (max-width: 1200px) {
+
     .product-details-section,
     .complete-your-routine-section {
         padding-left: 60px;
         padding-right: 60px;
     }
+
     .product-description-section {
         margin: 0 2rem;
     }
@@ -197,6 +208,7 @@
 }
 
 @media (max-width: 768px) {
+
     .product-details-section,
     .complete-your-routine-section {
         padding-left: 20px;
@@ -218,6 +230,7 @@
 }
 
 @media (max-width: 480px) {
+
     .product-details-section,
     .complete-your-routine-section {
         padding-left: 15px;

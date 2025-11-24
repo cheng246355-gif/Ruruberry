@@ -369,22 +369,6 @@
     flex-grow: 1;
 }
 
-.product-price {
-    font-size: var(--fs-body);
-    font-weight: 600;
-}
-
-.see-more {
-    text-align: center;
-    margin-top: 50px;
-}
-
-/*==============================================
-#*                                             *
-#*                  ROUTINE SECTION             *
-#*                                             *
-#*==============================================*/
-
 .routine-section {
     background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
     padding: 80px 60px;
