@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RU-PRESS</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="ru-press.css">
+    <title>Ruruberry - RU-PRESS</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/ru-press.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,12 +21,8 @@
 </head>
 
 <body>
-    <!-- ==============================================
-    #                                             #
-    #                    HEADER                    #
-    #                                             #
-    #=============================================== -->
     <t-header></t-header>
+    <div id="header-sentinel"></div>
 
     <!-- ==============================================
     #                                             #
@@ -36,8 +34,8 @@
 
             <div class="hero-content-container">
                 <h1>RU-PRESS</h1>
-                <p>Ruruberry's official blog featuring the latest in sciences, ingredients spotlights and expert
-                    insights. Your source for evidence-based skincare.</p>
+                <p>Ruruberry's official blog featuring the latest in skincare science, ingredient spotlights, and expert
+                    insights from our formulation team. Your trusted source for evidence-based skincare education.</p>
                 <div class="search-bar">
                     <input type="text" placeholder="Search...">
                     <button>Search</button>
@@ -46,12 +44,14 @@
         </section>
 
         <section class="featured-post">
-            <a href="ru-press/article-8.html">
-                <img src="images/Blog/8/Cover-670x400w.jpg" alt="Featured Post Image" loading="lazy">
-                <div class="featured-post-content">
-                    <h2>May 2022: Over 20 Million Views on TikTok with #Ruruberry</h2>
-                </div>
-            </a>
+            <div class="featured-post-card">
+                <a href="ru-press/article-8.html">
+                    <img src="images/Blog/8/Cover-670x400w.jpg" alt="Featured Post Image" loading="lazy">
+                    <div class="featured-post-content">
+                        <h3>May 2022: Over 20 Million Views on TikTok with #Ruruberry</h3>
+                    </div>
+                </a>
+            </div>
         </section>
 
         <section class="article-grid">
@@ -185,7 +185,7 @@
     #=============================================== -->
     <t-footer></t-footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>
 

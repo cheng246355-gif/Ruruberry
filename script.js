@@ -3,7 +3,7 @@
 // Debounce function to limit how often a function is called
 function debounce(func, delay) {
     let timeout;
-    return function(...args) {
+    return function (...args) {
         const context = this;
         clearTimeout(timeout);
         timeout = setTimeout(() => func.apply(context, args), delay);
@@ -51,7 +51,7 @@ class THeader extends HTMLElement {
             </header>
         `;
         this.header = this.querySelector('header');
-        
+
         // Add scroll event listener
         window.addEventListener('scroll', this.debouncedHandleScroll);
     }
@@ -83,8 +83,8 @@ customElements.define("t-header", THeader);
  * @description Custom element for the footer of the page.
  */
 class TFooter extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
     <footer>
         <div class="footer-content">
             <div class="footer-top">
@@ -95,6 +95,7 @@ class TFooter extends HTMLElement {
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="ru-press.html">Ru-PRESS</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">My Account</a></li>
                     </ul>
                 </div>
                 
@@ -141,8 +142,8 @@ class TFooter extends HTMLElement {
         </div>
     </footer>
      `;
-  }
-}   
+    }
+}
 customElements.define("t-footer", TFooter);
 
 /**
@@ -191,8 +192,8 @@ customElements.define("t-return-to-top", TReturnToTop);
  * @namespace HeroSlider
  * @description Logic for the hero slider component.
  */
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         const heroSliderContainer = document.querySelector('.hero-slider'); // Use a container for touch events
         if (!heroSliderContainer) return;
 
@@ -283,8 +284,8 @@ customElements.define("t-return-to-top", TReturnToTop);
  * @namespace TestimonialsSlider
  * @description Logic for the testimonials slider component.
  */
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         const slider = document.querySelector('.testimonials-slider');
         if (!slider) return;
 
@@ -340,8 +341,8 @@ customElements.define("t-return-to-top", TReturnToTop);
  * @namespace HamburgerMenu
  * @description Logic for the hamburger menu component.
  */
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         const hamburgerMenu = document.querySelector('.hamburger-menu');
         const navMenu = document.querySelector('.nav-menu');
         const headerControls = document.querySelector('.header-controls');
@@ -380,8 +381,8 @@ customElements.define("t-return-to-top", TReturnToTop);
  * @namespace BestsellersSlider
  * @description Logic for the bestsellers product card slider.
  */
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         const productsGrid = document.querySelector('.bestsellers .products-grid');
         if (!productsGrid) return;
 
@@ -393,7 +394,7 @@ customElements.define("t-return-to-top", TReturnToTop);
 
         const scrollAmount = () => {
             const firstCard = productsGrid.querySelector('.product-card');
-            // Assuming a gap of 30px as defined in home.css
+            // Adding a gap of 30px as defined in home.css
             return firstCard ? firstCard.offsetWidth + 30 : 390; // 360px card width + 30px gap
         };
 
@@ -438,14 +439,14 @@ customElements.define("t-return-to-top", TReturnToTop);
  * @namespace ProductImageGallery
  * @description Logic for the product image gallery on the product page.
  */
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         const thumbnails = document.querySelectorAll('.thumbnail');
         const mainImage = document.getElementById('main-product-image');
 
         if (thumbnails.length > 0 && mainImage) {
             thumbnails.forEach(thumbnail => {
-                thumbnail.addEventListener('click', function() {
+                thumbnail.addEventListener('click', function () {
                     // Remove active class from all thumbnails
                     thumbnails.forEach(thumb => thumb.classList.remove('active'));
 
@@ -466,8 +467,8 @@ customElements.define("t-return-to-top", TReturnToTop);
  * @namespace LoadingOverlay
  * @description Logic for the loading overlay animation.
  */
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         const loadingOverlay = document.querySelector('.loading-overlay');
 
         if (loadingOverlay) {
@@ -488,8 +489,8 @@ customElements.define("t-return-to-top", TReturnToTop);
  * @namespace AccountPage
  * @description Logic for the account page navigation.
  */
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         const navLinks = document.querySelectorAll('.account-nav a');
         const sections = document.querySelectorAll('.account-section');
         const defaultHash = navLinks.length > 0 ? navLinks[0].getAttribute('href') : '';
@@ -516,7 +517,7 @@ customElements.define("t-return-to-top", TReturnToTop);
                     if (defaultLink && defaultSection) {
                         defaultLink.classList.add('active');
                         defaultSection.classList.add('active');
-                         // Update hash to reflect the default state
+                        // Update hash to reflect the default state
                         history.replaceState(null, '', defaultHash);
                     }
                 }
@@ -524,7 +525,7 @@ customElements.define("t-return-to-top", TReturnToTop);
 
             // Add click event listeners
             navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
                     const targetHash = this.getAttribute('href');
 
@@ -533,7 +534,7 @@ customElements.define("t-return-to-top", TReturnToTop);
                         // window.location.href = 'index.html';
                         return;
                     }
-                    
+
                     if (window.location.hash !== targetHash) {
                         history.pushState(null, '', targetHash);
                         updateActiveState(targetHash);
@@ -558,8 +559,8 @@ customElements.define("t-return-to-top", TReturnToTop);
  * @namespace ScrollAnimations
  * @description Logic for triggering animations on scroll.
  */
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         const animatedElements = document.querySelectorAll('.animate-on-scroll');
 
         if (animatedElements.length > 0) {
@@ -585,14 +586,14 @@ customElements.define("t-return-to-top", TReturnToTop);
  * @namespace NewsletterForm
  * @description Logic for the newsletter form validation.
  */
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         const newsletterForm = document.querySelector('.footer-form');
         if (!newsletterForm) return;
 
         const emailInput = newsletterForm.querySelector('input[type="email"]');
 
-        newsletterForm.addEventListener('submit', function(e) {
+        newsletterForm.addEventListener('submit', function (e) {
             e.preventDefault();
             const email = emailInput.value.trim();
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="product.css">
+    <title>Ruruberry - Product Details</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/product.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -50,16 +52,15 @@
                 <p class="price">RM 45.00</p>
                 <a href="#key-ingredients" class="key-ingredients-link">Key Ingredients</a>
                 <div class="product-actions">
-                    <button class="btn-add-to-cart btn-accent">Add to cart</button>
-                    <button class="btn-buy-it-now btn-accent">Buy it now</button>
+                    <button class="btn-add-to-cart">Add to cart</button>
+                    <button class="btn-buy-it-now">Buy it now</button>
                 </div>
                 <div class="marketplace-buttons">
-                    <a href="https://www.lazada.com.my/shop/ruruberry/" target="_blank" class="marketplace-btn">
-                        <img src="images/Products/idABlWvZCp_logos.jpeg" alt="Buy on Lazada">
+                    <a href="#" class="marketplace-btn" aria-label="Shop on Shopee">
+                        <img src="images/Logo/Shopee.png" alt="Shopee">
                     </a>
-                    <a href="https://shopee.com.my/shop/307885759?uls_trackid=545m64o20027&v4=1" target="_blank"
-                        class="marketplace-btn">
-                        <img src="images/Products/shopee-seeklogo.png" alt="Buy on Shopee">
+                    <a href="#" class="marketplace-btn" aria-label="Shop on Lazada">
+                        <img src="images/Logo/Lazada.jpeg" alt="Lazada">
                     </a>
                 </div>
             </div>
@@ -70,26 +71,45 @@
             <div class="description-content">
                 <div class="description-item">
                     <h3>What am i</h3>
-                    <p>A lightweight, power-packed serum that combats dark spots, enlarged pores, inflammatory acne and
+                    <p>A lightweight, power-packed serum that combats dark spots, enlarged pores,
+                        inflammatory
+                        acne and
                         free radicals with precision.</p>
                 </div>
                 <div class="description-item">
                     <h3>Why pick me</h3>
-                    <p>Niacinamide, a form of Vitamin B3, is a well-researched and proven multidimensional ingredient
-                        that can effectively regulate pigment-making cells, normalize sebum production, tighten lax
-                        pores, smooth rough edges and visibly brighten tone. This water-soluble vitamin also works
-                        synergistically with the natural substances in your skin to maintain a healthy barrier, and
-                        stands out because of its versatility for almost any skin care and skin type. Additionally
-                        enhanced with Hyaluronic Acid, a hydrating agent known for its ability to attract and hold onto
-                        1000x its weight in moisture, to help plump away wrinkles and firm up sagging skin. Further
-                        supported by Sodium Ascorbyl Phosphate, a hydrophilic derivative of Ascorbic Acid that heals
-                        blemishes while also being gentler and more stable, and Panthenol, a provitamin of B5 that
+                    <p>Niacinamide, a form of Vitamin B3, is a well-researched and proven multidimensional
+                        ingredient
+                        that can effectively regulate pigment-making cells, normalize sebum production,
+                        tighten
+                        lax
+                        pores, smooth rough edges and visibly brighten tone. This water-soluble vitamin also
+                        works
+                        synergistically with the natural substances in your skin to maintain a healthy
+                        barrier,
+                        and
+                        stands out because of its versatility for almost any skin care and skin type.
+                        Additionally
+                        enhanced with Hyaluronic Acid, a hydrating agent known for its ability to attract
+                        and
+                        hold onto
+                        1000x its weight in moisture, to help plump away wrinkles and firm up sagging skin.
+                        Further
+                        supported by Sodium Ascorbyl Phosphate, a hydrophilic derivative of Ascorbic Acid
+                        that
+                        heals
+                        blemishes while also being gentler and more stable, and Panthenol, a provitamin of
+                        B5
+                        that
                         relieves the symptoms of irritated skin.</p>
                 </div>
                 <div id="key-ingredients" class="description-item">
                     <h3>Key Ingredients</h3>
-                    <p>Niacinamide: A vitamin that brightens skin, reduces the appearance of blemishes, and balances
-                        sebum activity. Zinc PCA: A mineral that helps to control oil production and reduce the look of
+                    <p>Niacinamide: A vitamin that brightens skin, reduces the appearance of blemishes, and
+                        balances
+                        sebum activity. Zinc PCA: A mineral that helps to control oil production and reduce
+                        the
+                        look of
                         enlarged pores.</p>
                 </div>
                 <div class="description-item">
@@ -111,11 +131,19 @@
                 </div>
                 <div class="description-item">
                     <h3>Good to Know</h3>
-                    <p>It is actually perfectly safe and even beneficial to mix both Niacinamide and Sodium Ascorbyl
-                        Phosphate, either together in the same product or combined from layering different products. The
-                        worries about rendering them ineffective, resulting in a dreaded yellow solution, are fairly
-                        unjustified as that is merely a product of a harmless charge-transfer interaction; while they
-                        can in certain condition create Niacin, leading to a possible flush, that reaction will only
+                    <p>It is actually perfectly safe and even beneficial to mix both Niacinamide and Sodium
+                        Ascorbyl
+                        Phosphate, either together in the same product or combined from layering different
+                        products. The
+                        worries about rendering them ineffective, resulting in a dreaded yellow solution,
+                        are
+                        fairly
+                        unjustified as that is merely a product of a harmless charge-transfer interaction;
+                        while
+                        they
+                        can in certain condition create Niacin, leading to a possible flush, that reaction
+                        will
+                        only
                         occur under extreme heat over extended periods of time.</p>
                 </div>
             </div>
@@ -175,7 +203,9 @@
                         <div class="stars" role="img" aria-label="5 out of 5 stars">
                             <span aria-hidden="true">★★★★★</span>
                         </div>
-                        <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a Malaysian brand I
+                        <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a
+                            Malaysian
+                            brand I
                             trust! The serum is super light."</p>
                         <cite class="testimonial-author">Alice</cite>
                     </div>
@@ -183,7 +213,9 @@
                         <div class="stars" role="img" aria-label="5 out of 5 stars">
                             <span aria-hidden="true">★★★★★</span>
                         </div>
-                        <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a Malaysian brand I
+                        <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a
+                            Malaysian
+                            brand I
                             trust! The serum is super light."</p>
                         <cite class="testimonial-author">Alice</cite>
                     </div>
@@ -191,7 +223,9 @@
                         <div class="stars" role="img" aria-label="5 out of 5 stars">
                             <span aria-hidden="true">★★★★★</span>
                         </div>
-                        <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a Malaysian brand I
+                        <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a
+                            Malaysian
+                            brand I
                             trust! The serum is super light."</p>
                         <cite class="testimonial-author">Alice</cite>
                     </div>
@@ -199,7 +233,9 @@
                         <div class="stars" role="img" aria-label="5 out of 5 stars">
                             <span aria-hidden="true">★★★★★</span>
                         </div>
-                        <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a Malaysian brand I
+                        <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a
+                            Malaysian
+                            brand I
                             trust! The serum is super light."</p>
                         <cite class="testimonial-author">Alice</cite>
                     </div>
@@ -207,7 +243,9 @@
                         <div class="stars" role="img" aria-label="5 out of 5 stars">
                             <span aria-hidden="true">★★★★★</span>
                         </div>
-                        <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a Malaysian brand I
+                        <p class="testimonial-text">"Perfect for my acne-prone skin! Finally found a
+                            Malaysian
+                            brand I
                             trust! The serum is super light."</p>
                         <cite class="testimonial-author">Alice</cite>
                     </div>
@@ -218,7 +256,7 @@
         </section>
     </main>
     <t-footer></t-footer>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>
 

@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Take our 2-minute skin quiz to get personalized product recommendations based on your skin type, concerns, and climate.">
-    <title>Skin Routine Builder - Ruruberry Quiz</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="quiz.css">
+    <title>Ruruberry - Skin Routine Builder</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/quiz.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,18 +21,10 @@
 </head>
 
 <body>
-
-    <!-- ============================================== 
-    #                                             #
-    #                    HEADER                    #
-    #                                             #
-    #=============================================== -->
     <t-header></t-header>
 
     <div class="app">
         <div class="quiz-container">
-
-            <!-- Progress Bar -->
             <div class="progress-container hidden" id="progressContainer">
                 <div class="progress-bar">
                     <div class="progress-fill" id="progressFill"></div>
@@ -276,7 +268,7 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
     <script src="quiz.js"></script>
 </body>
 
