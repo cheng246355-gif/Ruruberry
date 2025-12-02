@@ -15,6 +15,7 @@ export class TFooter extends HTMLElement {
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="ru-press.html">Ru-PRESS</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">My Account</a></li>
                     </ul>
                 </div>
                 
