@@ -80,11 +80,13 @@
     margin-bottom: 1rem;
 }
 
-.key-ingredients-link {
+.key-ingredients {
+    padding: 8px 20px;
+    background: var(--color-light);
+    border-radius: 10px;
+    border: 2px solid var(--color-dark);
     display: block;
     margin-bottom: 2rem;
-    text-decoration: underline;
-    color: #000;
 }
 
 .product-actions {
@@ -97,16 +99,20 @@
     flex: 1;
     padding: 1rem;
     border: 1px solid var(--accent-color);
+    border-radius: 8px;
+
     background-color: #fff;
     color: var(--accent-color);
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .btn-buy-it-now {
     background-color: var(--accent-color);
     color: #fff;
+    text-decoration: none;
 }
 
 .btn-add-to-cart:hover {
@@ -115,6 +121,7 @@
 }
 
 .btn-buy-it-now:hover {
+
     background-color: #fff;
     color: var(--accent-color);
 }
@@ -142,14 +149,17 @@
     margin-bottom: 0.5rem;
 }
 
-.complete-your-routine-section {
+.best-se .complete-your-routine-section {
     text-align: center;
     margin-bottom: 3rem;
     padding: 2rem 120px;
 }
 
 .complete-your-routine-section h2 {
-    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.complete-your-routine-section p {
     margin-bottom: 1.5rem;
 }
 

@@ -13,26 +13,31 @@ export class THeader extends HTMLElement {
     }
 
     connectedCallback() {
+        const rootPath = this.getAttribute('root-path') || './';
+
         this.innerHTML = `
             <header>
                 <div class="logo">
-                    <a href="index.html">
-                    <img class="logo-img" src="./images/Logo/RuruberryLogo_Normal Size-1000x189.png" alt="RuRuBerry Logo">
+                    <a href="${rootPath}index.html">
+                    <img class="logo-img" src="${rootPath}images/Logo/RuruberryLogo_Normal Size-1000x189.png" alt="RuRuBerry Logo">
                     </a>
                 </div>
                 <nav>
                     <ul class="nav-menu">
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="ru-press.html">Ru-PRESS</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="${rootPath}about-us.html">About Us</a></li>
+                        <li><a href="${rootPath}shop.html">Shop</a></li>
+                        <li><a href="${rootPath}ru-press.html">Ru-PRESS</a></li>
+                        <li><a href="${rootPath}contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-controls">
                     <div class="header-icons">
-                        <a href="account.html"><span class="material-symbols-outlined" aria-hidden="true">account_circle</span></a>
-                        <a href="contact.html#retailers-section"><span class="material-symbols-outlined" aria-hidden="true">location_on</span></a>
+                        <a href="${rootPath}account.html"><span class="material-symbols-outlined" aria-hidden="true">account_circle</span></a>
+                        <a href="${rootPath}contact.html#retailers-section"><span class="material-symbols-outlined" aria-hidden="true">location_on</span></a>
                         <a href="#search"><span class="material-symbols-outlined" aria-hidden="true">search</span></a>
+                    </div>
+                    <div class="header-btn-container">
+                        <a href="${rootPath}quiz.html" class="btn-secondary header-quiz-btn">Skin Quiz</a>
                     </div>
                     <button class="hamburger-menu" aria-label="Toggle navigation menu">
                         <i class="ph-bold ph-list" aria-hidden="true"></i>

@@ -4,6 +4,8 @@
  */
 export class TFooter extends HTMLElement {
     connectedCallback() {
+        const rootPath = this.getAttribute('root-path') || './';
+
         this.innerHTML = `
     <footer>
         <div class="footer-content">
@@ -11,11 +13,11 @@ export class TFooter extends HTMLElement {
                 <!-- Left Column - Links -->
                 <div class="footer-links">
                     <ul>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="ru-press.html">Ru-PRESS</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="account.html">My Account</a></li>
+                        <li><a href="${rootPath}about-us.html">About Us</a></li>
+                        <li><a href="${rootPath}shop.html">Shop</a></li>
+                        <li><a href="${rootPath}ru-press.html">Ru-PRESS</a></li>
+                        <li><a href="${rootPath}contact.html">Contact</a></li>
+                        <li><a href="${rootPath}account.html">My Account</a></li>
                     </ul>
                 </div>
                 
@@ -36,7 +38,7 @@ export class TFooter extends HTMLElement {
                 <!-- Logo and Brand -->
                 <div class="footer-brand">
                     <div class="logo">
-                        <img class="logo-img" src="./images/Logo/RuruberryLogo_Normal Size-1000x189.png" alt="RuRuBerry Logo" loading="lazy">
+                        <img class="logo-img" src="${rootPath}images/Logo/RuruberryLogo_Normal Size-1000x189.png" alt="RuRuBerry Logo" loading="lazy">
                     </div>
                     <p class="brand-tagline">Rudiment. Progress. Perfection</p>
                 </div>
@@ -52,8 +54,8 @@ export class TFooter extends HTMLElement {
                 <div class="footer-bottom">
                     <!-- Left - Payment Icons -->
                     <div class="payment-icons">
-                        <img src="images/cc-visa.svg" alt="Visa">
-                        <img src="images/mastercard.svg" alt="Mastercard">
+                        <img src="${rootPath}images/cc-visa.svg" alt="Visa">
+                        <img src="${rootPath}images/mastercard.svg" alt="Mastercard">
                     </div>
                     <!-- Right - Copyright -->
                     <div class="copyright">© Copyright by Chong You Cheng 2025</div>

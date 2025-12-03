@@ -50,16 +50,22 @@
                 <p class="stock-status">In Stock</p>
                 <p class="product-code">Product Code: 9551003171019</p>
                 <p class="price">RM 45.00</p>
-                <a href="#key-ingredients" class="key-ingredients-link">Key Ingredients</a>
+                <div class="key-ingredients">
+                    <p><strong>Key Ingredients</strong></p>
+                    <p>- Niacinamide (Vitamin B3) [10%]</p>
+                    <p>- Zinc PCA [1%]</p>
+                </div>
                 <div class="product-actions">
                     <button class="btn-add-to-cart">Add to cart</button>
-                    <button class="btn-buy-it-now">Buy it now</button>
+                    <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
                 </div>
                 <div class="marketplace-buttons">
-                    <a href="#" class="marketplace-btn" aria-label="Shop on Shopee">
+                    <a href="https://shopee.com.my/shop/307885759?mmp_pid=an_12053440002&uls_trackid=54banjhb00e9&v4=1"
+                        class="marketplace-btn" aria-label="Shop on Shopee" target="_blank" rel="noopener noreferrer">
                         <img src="images/Logo/Shopee.png" alt="Shopee">
                     </a>
-                    <a href="#" class="marketplace-btn" aria-label="Shop on Lazada">
+                    <a href="https://www.lazada.com.my/shop/ruruberry/" class="marketplace-btn"
+                        aria-label="Shop on Lazada" target="_blank" rel="noopener noreferrer">
                         <img src="images/Logo/Lazada.jpeg" alt="Lazada">
                     </a>
                 </div>
@@ -149,46 +155,101 @@
             </div>
         </section>
 
-        <section class="complete-your-routine-section">
-            <h2>Complete Your Routine</h2>
-            <p>Products that work perfectly with this serum</p>
-            <div class="product-grid">
+        <section class="bestsellers">
+            <div class="section-header">
+                <div>
+                    <h2>Complete Your Routine</h2>
+                    <p>Products that work perfectly with this serum</p>
+                </div>
+                <div class="nav-arrows">
+                    <button class="arrow-btn" aria-label="Previous slide"><i class="ph-bold ph-caret-left"
+                            aria-hidden="true"></i></button>
+                    <button class="arrow-btn" aria-label="Next slide"><i class="ph-bold ph-caret-right"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="products-grid slider">
                 <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Home/M1-2000x2160w.jpg" alt="BHA Combat">
-                    </div>
-                    <div class="product-info">
-                        <p class="product-name">BHA Combat</p>
-                        <p class="product-price">RM 62.00</p>
-                    </div>
+                    <a href="product.html">
+                        <div class="product-image">
+                            <div class="product-badge badge-hot">Hot</div>
+                            <img src="images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
+                                loading="lazy">
+                        </div>
+                        <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
+                    </a>
+                    <p class="product-type">All skin types</p>
+                    <p class="product-description">A hybrid AHA toner that helps with tone and acne without irritation
+                    </p>
+                    <p class="product-price">RM 29.00</p>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Home/Expert 1-2000x2160w.jpg" alt="10% Mandelic Acid">
-                    </div>
-                    <div class="product-info">
-                        <p class="product-name">10% Mandelic Acid</p>
-                        <p class="product-price">RM 62.00</p>
-                    </div>
+                    <a href="product.html">
+                        <div class="product-image">
+                            <div class="product-badge badge-new">New</div>
+                            <img src="images/Products/Crystal Expert_01-1200x1600.jpg"
+                                alt="Overnight Renewing Expert Crystal-A 0.05%" loading="lazy">
+                        </div>
+                        <h3 class="product-title">Overnight Renewing Expert Crystal-A 0.05%</h3>
+                    </a>
+                    <p class="product-type">All skin types</p>
+                    <p class="product-description">A gentle retinol sealing collagen boost and smoothness</p>
+                    <p class="product-price">RM 75.00</p>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Home/Niacinamide-Essence-30ml-2000x2160w.jpg" alt="2% Alpha Arbutin">
-                    </div>
-                    <div class="product-info">
-                        <p class="product-name">2% Alpha Arbutin</p>
-                        <p class="product-price">RM 62.00</p>
-                    </div>
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/Products/2AA_01-1200x1600.jpg" alt="2% Alpha Arbutin" loading="lazy">
+                        </div>
+                        <h3 class="product-title">2% Alpha Arbutin</h3>
+                    </a>
+                    <p class="product-type">All skin types</p>
+                    <p class="product-description">A tyrosinase inhibitor that minimizes the appearance of post-breakout
+                        marks and skin tone</p>
+                    <p class="product-price">RM 75.00</p>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Home/Oat-Panthenol-Essence-30ml-2000x2160w.jpg" alt="3% GHA Solution">
-                    </div>
-                    <div class="product-info">
-                        <p class="product-name">3% GHA Solution</p>
-                        <p class="product-price">RM 62.00</p>
-                    </div>
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="images/Products/OatPanthenol_03-1200x1600.jpg" alt="Product 4" loading="lazy">
+                        </div>
+                        <h3 class="product-title">Oat-Panthenol Essence</h3>
+                    </a>
+                    <p class="product-type">Combination skin</p>
+                    <p class="product-description">A soothing essence with oat and panthenol to calm and hydrate
+                        sensitive
+                        skin.</p>
+                    <p class="product-price">RM 50.00</p>
                 </div>
+                <div class="product-card">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <div class="product-badge badge-hot">Hot</div>
+                            <img src="images/Products/CleansingGel_01-1200x1600.jpg" alt="Product 5" loading="lazy">
+                        </div>
+                        <h3 class="product-title">Gentle Fresh Cleansing Gel</h3>
+                    </a>
+                    <p class="product-type">Dry skin</p>
+                    <p class="product-description">A mild, pH-balanced cleansing gel that effectively removes impurities
+                        without stripping skin.</p>
+                    <p class="product-price">RM 104.00</p>
+                </div>
+                <div class="product-card">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <div class="product-badge badge-new">New</div>
+                            <img src="images/Products/1-1200x1600 (4).jpg" alt="Product 6" loading="lazy">
+                        </div>
+                        <h3 class="product-title">Daily Sunscreen</h3>
+                    </a>
+                    <p class="product-type">Oily skin</p>
+                    <p class="product-description">Lightweight, non-greasy daily sunscreen with broad-spectrum SPF50+
+                        protection.</p>
+                    <p class="product-price">RM 62.00</p>
+                </div>
+            </div>
+            <div class="see-more">
+                <a href="shop.html" class="btn-secondary">See more</a>
             </div>
         </section>
 
