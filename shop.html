@@ -42,32 +42,38 @@
 
         <section class="shop-main">
             <aside class="filters-column">
-                <div class="filter-card">
-                    <h3>Filters</h3>
-                    <div class="filter-search">
-                        <input type="search" placeholder="Search products...">
-                        <i class="ph-bold ph-magnifying-glass"></i>
+                <button id="filter-toggle" class="btn-filter-toggle">
+                    <i class="ph-bold ph-faders"></i> Filter
+                </button>
+                <div class="filter-menu" id="filter-menu">
+                    <div class="filter-card">
+                        <h3>Filters</h3>
+                        <div class="filter-search">
+                            <input type="search" placeholder="Search products...">
+                            <i class="ph-bold ph-magnifying-glass"></i>
+                        </div>
+                        <button class="btn-clear-filters">Clear Filters</button>
                     </div>
-                    <button class="btn-clear-filters">Clear Filters</button>
-                </div>
-                <div class="filter-group">
-                    <h4>Category</h4>
-                    <ul>
-                        <li><a href="#">All</a></li>
-                        <li><a href="#">Cleansers</a></li>
-                        <li><a href="#">Serums</a></li>
-                        <li><a href="#">Moisturizers</a></li>
-                        <li><a href="#">Sunscreens</a></li>
-                    </ul>
-                </div>
-                <div class="filter-group">
-                    <h4>Skin Concern</h4>
-                    <ul>
-                        <li><a href="#">Acne & Blemishes</a></li>
-                        <li><a href="#">Dryness & Dehydration</a></li>
-                        <li><a href="#">Fine Lines & Wrinkles</a></li>
-                        <li><a href="#">Dullness</a></li>
-                    </ul>
+                    <div class="filter-group">
+                        <h4>Category</h4>
+                        <ul class="category-filters">
+                            <li><a href="#" class="active" data-category="all">All</a></li>
+                            <li><a href="#" data-category="booster-drop">Booster Drop</a></li>
+                            <li><a href="#" data-category="cleanser">Cleanser</a></li>
+                            <li><a href="#" data-category="essence-toner">Essence/Toner</a></li>
+                            <li><a href="#" data-category="moisturizer">Moisturizer</a></li>
+                            <li><a href="#" data-category="lifestyle-collection">Lifestyle Collection</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Skin Concern</h4>
+                        <ul>
+                            <li><a href="#">Acne & Blemishes</a></li>
+                            <li><a href="#">Dryness & Dehydration</a></li>
+                            <li><a href="#">Fine Lines & Wrinkles</a></li>
+                            <li><a href="#">Dullness</a></li>
+                        </ul>
+                    </div>
                 </div>
             </aside>
             <div class="product-grid" id="product-grid">

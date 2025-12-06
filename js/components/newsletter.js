@@ -1,9 +1,11 @@
+import { waitForElement } from '../utils.js';
+
 /**
  * @namespace NewsletterForm
  * @description Logic for the newsletter form validation.
  */
-export function initNewsletterForm() {
-    const newsletterForm = document.querySelector('.footer-form');
+export async function initNewsletterForm() {
+    const newsletterForm = await waitForElement('.footer-form');
     if (!newsletterForm) return;
 
     const emailInput = newsletterForm.querySelector('input[type="email"]');

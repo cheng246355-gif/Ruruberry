@@ -1,12 +1,14 @@
+import { waitForElement } from '../utils.js';
+
 /**
  * @namespace HamburgerMenu
  * @description Logic for the hamburger menu component.
  */
-export function initHamburgerMenu() {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const navMenu = document.querySelector('.nav-menu');
-    const headerControls = document.querySelector('.header-controls');
-    const headerIcons = document.querySelector('.header-icons');
+export async function initHamburgerMenu() {
+    const hamburgerMenu = await waitForElement('.hamburger-menu');
+    const navMenu = await waitForElement('.nav-menu');
+    const headerControls = await waitForElement('.header-controls');
+    const headerIcons = await waitForElement('.header-icons');
 
     if (hamburgerMenu && navMenu && headerControls && headerIcons) {
         hamburgerMenu.addEventListener('click', () => {
