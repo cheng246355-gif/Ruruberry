@@ -312,6 +312,19 @@
             });
         }
 
+        // Check for search query in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchParam = urlParams.get('search');
+
+        if (searchParam) {
+            currentSearchQuery = searchParam.trim();
+            if (searchInput) {
+                searchInput.value = searchParam;
+            }
+            // Automatically open filter menu on mobile if searching? Maybe not, can be annoying.
+            // But we should show that filters are active.
+        }
+
         // Initial load
         loadProducts();
 
