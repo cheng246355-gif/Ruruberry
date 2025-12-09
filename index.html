@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -37,7 +38,7 @@
     #                  HERO SECTION                #
     #                                             #
     #=============================================== -->
-    <section class="hero">
+    <section class="hero animate-on-scroll fade-in">
         <div class="hero-slider">
             <div class="slide">
                 <img srcset="images/Home/b1-1671x939.jpg 1671w, images/Home/b1-3342x1878.jpg 3342w"
@@ -67,7 +68,7 @@
     #                    MARQUEE                   #
     #                                             #
     #=============================================== -->
-    <div class="marquee">
+    <div class="marquee animate-on-scroll fade-in">
         <div class="marquee-content">
             <span class="marquee-item">RUDIMENT. PROGRESS. PERFECTION</span>
             <span class="marquee-item">CLEAN. EFFECTIVE. ETHICAL</span>
@@ -81,7 +82,7 @@
     #                PHILOSOPHY SECTION            #
     #                                             #
     #=============================================== -->
-    <section class="philosophy">
+    <section class="philosophy animate-on-scroll slide-in-up">
         <h2>Our Philosophy</h2>
         <div class="philosophy-grid">
             <div class="philosophy-card">
@@ -128,7 +129,7 @@
     #                  BESTSELLERS                 #
     #                                             #
     #=============================================== -->
-    <section class="bestsellers">
+    <section class="bestsellers animate-on-scroll slide-in-up">
         <div class="section-header">
             <div>
                 <h2>Bestsellers</h2>
@@ -147,7 +148,9 @@
                     <div class="product-image">
                         <div class="product-badge badge-hot">Hot</div>
                         <img src="images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                            loading="lazy">
+                            class="product-card-image main-image" loading="lazy">
+                        <img src="images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
+                            class="product-card-image hover-image" loading="lazy">
                     </div>
                     <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                 </a>
@@ -160,7 +163,11 @@
                     <div class="product-image">
                         <div class="product-badge badge-new">New</div>
                         <img src="images/Products/Crystal Expert_01-1200x1600.jpg"
-                            alt="Overnight Renewing Expert Crystal-A 0.05%" loading="lazy">
+                            alt="Overnight Renewing Expert Crystal-A 0.05%" class="product-card-image main-image"
+                            loading="lazy">
+                        <img src="images/Products/Crystal Expert_03-1200x1600.jpg"
+                            alt="Overnight Renewing Expert Crystal-A 0.05%" class="product-card-image hover-image"
+                            loading="lazy">
                     </div>
                     <h3 class="product-title">Overnight Renewing Expert Crystal-A 0.05%</h3>
                 </a>
@@ -171,7 +178,10 @@
             <div class="product-card">
                 <a href="product.html">
                     <div class="product-image">
-                        <img src="images/Products/2AA_01-1200x1600.jpg" alt="2% Alpha Arbutin" loading="lazy">
+                        <img src="images/Products/2AA_01-1200x1600.jpg" alt="2% Alpha Arbutin"
+                            class="product-card-image main-image" loading="lazy">
+                        <img src="images/Products/2AA_03-1200x1600.jpg" alt="2% Alpha Arbutin"
+                            class="product-card-image hover-image" loading="lazy">
                     </div>
                     <h3 class="product-title">2% Alpha Arbutin</h3>
                 </a>
@@ -183,7 +193,10 @@
             <div class="product-card">
                 <a href="product.html">
                     <div class="product-image">
-                        <img src="images/Products/OatPanthenol_03-1200x1600.jpg" alt="Product 4" loading="lazy">
+                        <img src="images/Products/OatPanthenol_05-1200x1600.jpg" alt="Oat-Panthenol Essence"
+                            class="product-card-image main-image" loading="lazy">
+                        <img src="images/Products/OatPanthenol_03-1200x1600.jpg" alt="Oat-Panthenol Essence"
+                            class="product-card-image hover-image" loading="lazy">
                     </div>
                     <h3 class="product-title">Oat-Panthenol Essence</h3>
                 </a>
@@ -196,7 +209,10 @@
                 <a href="product.html">
                     <div class="product-image">
                         <div class="product-badge badge-hot">Hot</div>
-                        <img src="images/Products/CleansingGel_01-1200x1600.jpg" alt="Product 5" loading="lazy">
+                        <img src="images/Products/CleansingGel_01-1200x1600.jpg" alt="Gentle Fresh Cleansing Gel"
+                            class="product-card-image main-image" loading="lazy">
+                        <img src="images/Products/CleansingGel_03-1200x1600.jpg" alt="Gentle Fresh Cleansing Gel"
+                            class="product-card-image hover-image" loading="lazy">
                     </div>
                     <h3 class="product-title">Gentle Fresh Cleansing Gel</h3>
                 </a>
@@ -208,7 +224,10 @@
             <div class="product-card">
                 <a href="product.html">
                     <div class="product-image">
-                        <img src="images/Products/10HA_04-1200x1600.jpg" alt="10% Niacinamide + HA" loading="lazy">
+                        <img src="images/Products/10HA_04-1200x1600.jpg" alt="10% Niacinamide + HA"
+                            class="product-card-image main-image" loading="lazy">
+                        <img src="images/Products/10HA_02-1200x1600.jpg" alt="10% Niacinamide + HA"
+                            class="product-card-image hover-image" loading="lazy">
                     </div>
                     <h3 class="product-title">10% Niacinamide + HA</h3>
                 </a>
@@ -228,7 +247,7 @@
     #                ROUTINE SECTION               #
     #                                             #
     #=============================================== -->
-    <section class="routine-section">
+    <section class="routine-section animate-on-scroll fade-in">
         <h2>Find Your Perfect Routine</h2>
         <p>Take our 2-minute skin quiz to get personalized product recommendations based on your skin type, concerns,
             and climate.</p>
@@ -247,7 +266,7 @@
     #                   NEWSLETTER                 #
     #                                             #
     #=============================================== -->
-    <section class="newsletter">
+    <section class="newsletter animate-on-scroll slide-in-up">
         <h2>Stay Updated</h2>
         <p>Get skincare tips, new product launches, and exclusive offers</p>
         <form class="newsletter-form">

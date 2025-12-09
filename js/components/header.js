@@ -1,4 +1,5 @@
 import { debounce } from '../utils.js';
+import { allProducts } from '../products.js';
 
 /**
  * @namespace THeader
@@ -63,6 +64,7 @@ export class THeader extends HTMLElement {
                                 <span class="material-symbols-outlined">arrow_forward</span>
                             </button>
                         </form>
+                        <ul class="search-results" hidden></ul>
                     </div>
                 </div>
             </header>
@@ -76,6 +78,7 @@ export class THeader extends HTMLElement {
         this.searchBtn = this.querySelector('.search-toggle');
         this.searchContainer = this.querySelector('.header-search-container');
         this.searchInput = this.querySelector('.header-search-input');
+        this.searchResults = this.querySelector('.search-results');
 
         // Add event listeners
         window.addEventListener('scroll', this.debouncedHandleScroll);
@@ -92,6 +95,10 @@ export class THeader extends HTMLElement {
         const searchForm = this.querySelector('.header-search-form');
         if (searchForm) {
             searchForm.addEventListener('submit', this.handleSearchSubmit);
+        }
+
+        if (this.searchInput) {
+            this.searchInput.addEventListener('input', this.handleSearchInput.bind(this));
         }
 
         // Close search on escape key
@@ -141,6 +148,63 @@ export class THeader extends HTMLElement {
         // Form submission is handled natively by the action attribute, 
         // effectively redirecting to shop.html?search=value
         // We just ensure we don't preventDefault unless validation fails (which we don't have here)
+    }
+
+    handleSearchInput(e) {
+        const query = e.target.value.toLowerCase().trim();
+        const rootPath = this.getAttribute('root-path') || './';
+
+        if (query.length === 0) {
+            this.searchResults.innerHTML = '';
+            this.searchResults.hidden = true;
+            return;
+        }
+
+        const filteredProducts = allProducts.filter(product =>
+            product.name.toLowerCase().includes(query)
+        );
+
+        this.renderSearchResults(filteredProducts, rootPath);
+    }
+
+    renderSearchResults(products, rootPath) {
+        this.searchResults.innerHTML = '';
+
+        if (products.length === 0) {
+            this.searchResults.hidden = true;
+            return;
+        }
+
+        this.searchResults.hidden = false;
+
+        products.forEach(product => {
+            const li = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = `${rootPath}${product.link}`;
+
+            // Allow navigating to specific product with search param if link is generic
+            // But currently product.link is just 'product.html'. 
+            // Ideally it should be 'product.html?id=...' or similar, but for now we just link to product.html
+            // Maybe we can pass the name?
+            // Actually, existing code in shop.js uses just 'product.html'. 
+            // In a real app we'd need specific product pages. 
+            // For now, let's keep it simple or maybe pass the name as query param?
+            // "link": "product.html"
+
+            // Let's modify the link to search for this product in shop page if product page is generic?
+            // Or just link to product.html as defined in data.
+
+            link.innerHTML = `
+                <img src="${rootPath}${product.imageUrl}" alt="${product.name}">
+                <div>
+                    <span class="product-name">${product.name}</span>
+                    <span class="product-price">${product.price}</span>
+                </div>
+            `;
+
+            li.appendChild(link);
+            this.searchResults.appendChild(li);
+        });
     }
 
     handleHamburgerClick() {

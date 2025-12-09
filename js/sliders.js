@@ -56,6 +56,15 @@ export function initHeroSlider() {
         });
     });
 
+    // Pause on hover
+    heroSliderContainer.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+    });
+
+    heroSliderContainer.addEventListener('mouseleave', () => {
+        startSlideTimer();
+    });
+
     // Touch/Swipe event listeners
     heroSliderContainer.addEventListener('touchstart', (e) => {
         touchStartX = e.touches[0].clientX;
