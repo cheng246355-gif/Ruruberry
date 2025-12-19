@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <t-header></t-header>
+    <t-header root-path="../"></t-header>
 
     <main class="product-page-main">
         <section class="product-details-section">
@@ -32,16 +32,12 @@
                 </div>
                 <div class="thumbnails">
                     <img src="../images/Products/OatPanthenol_03-1200x1600.jpg" alt="Thumbnail 1"
-                        class="thumbnail active"
+                        class="thumbnail active" data-large-src="../images/Products/OatPanthenol_03-1200x1600.jpg">
+                    <img src="../images/Products/OatPanthenol_03-1200x1600.jpg" alt="Thumbnail 2" class="thumbnail"
                         data-large-src="../images/Products/OatPanthenol_03-1200x1600.jpg">
-                    <img src="../images/Products/OatPanthenol_03-1200x1600.jpg" alt="Thumbnail 2"
-                        class="thumbnail"
+                    <img src="../images/Products/OatPanthenol_03-1200x1600.jpg" alt="Thumbnail 3" class="thumbnail"
                         data-large-src="../images/Products/OatPanthenol_03-1200x1600.jpg">
-                    <img src="../images/Products/OatPanthenol_03-1200x1600.jpg" alt="Thumbnail 3"
-                        class="thumbnail"
-                        data-large-src="../images/Products/OatPanthenol_03-1200x1600.jpg">
-                    <img src="../images/Products/OatPanthenol_03-1200x1600.jpg" alt="Thumbnail 4"
-                        class="thumbnail"
+                    <img src="../images/Products/OatPanthenol_03-1200x1600.jpg" alt="Thumbnail 4" class="thumbnail"
                         data-large-src="../images/Products/OatPanthenol_03-1200x1600.jpg">
                 </div>
             </div>
@@ -50,7 +46,14 @@
                 <p class="stock-status">In Stock</p>
                 <p class="product-code">Product Code: 9551003171019</p>
                 <p class="price">RM 78.00</p>
-                <div class="key-ingredients"><p><strong>Key Ingredients</strong></p><p>-<br>Beta-Glucan (100% bio-sourced from Oat)<br>-<br>Panthenol<br>-<br>Allantoin</p></div>
+                <div class="key-ingredients">
+                    <p><strong>Key Ingredients</strong></p>
+                    <ul>
+                        <li>Beta-Glucan (100% bio-sourced from Oat)</li>
+                        <li>Panthenol</li>
+                        <li>Allantoin</li>
+                    </ul>
+                </div>
                 <div class="product-actions">
                     <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
                 </div>
@@ -72,36 +75,64 @@
             <div class="description-content">
                 <div class="description-item">
                     <h3>What am i</h3>
-                    <p>A calming, restorative essence that hydrates, soothes and nourishes for enhanced skin protection while prepping to reduce redness, dryness, sensitivity and irritation
-.</p>
+                    <p>A calming, restorative essence that hydrates, soothes and nourishes for enhanced skin protection
+                        while prepping to reduce redness, dryness, sensitivity and irritation
+                        .</p>
                 </div>
                 <div class="description-item">
                     <h3>Why pick me</h3>
-                    <p>Oat Beta-Glucan, a polysaccharide obtained specifically from oats, is one of the most powerful soothing agents for minimising redness and other signs of sensitivity, and an excellent hydrator known to have as good or better plumping capacity as hyaluronic acid, that works to not only trap in moisture but also limit trans-epidermal water loss, resulting in a more supple feel and appearance.
-Combined with Panthenol that penetrates well to deliver greater efficacy; calming, replenishing and repairing at the same time, in addition to fortifying the skin’s barrier against dehydration, irritants, and other environmental stressors, for strong and healthy barrier function to help maximise the skin protection benefits while restoring glow and rebuilding elasticity to reveal softer, smoother skin
-.
-For complete relief of the skin, this also includes Allantoin, a gentle anti-ager with the ability to stimulate the growth of new cells and facilitate collagen synthesis, aiding in wound recovery and scar prevention while alleviating inflamed skin and decreasing any itching or flaking; alongside Poria Cocos Sclerotium Extract, an antioxidant-rich mushroom derivative, which can heal at multiple levels, exhibiting a potent anti-inflammatory effect both externally
-and internally, to condition and keep flare-ups in check while rehabilitating a damaged or sensitised barrier
-.</p>
+                    <p>Oat Beta-Glucan, a polysaccharide obtained specifically from oats, is one of the most powerful
+                        soothing agents for minimising redness and other signs of sensitivity, and an excellent hydrator
+                        known to have as good or better plumping capacity as hyaluronic acid, that works to not only
+                        trap in moisture but also limit trans-epidermal water loss, resulting in a more supple feel and
+                        appearance.
+                        Combined with Panthenol that penetrates well to deliver greater efficacy; calming, replenishing
+                        and repairing at the same time, in addition to fortifying the skin’s barrier against
+                        dehydration, irritants, and other environmental stressors, for strong and healthy barrier
+                        function to help maximise the skin protection benefits while restoring glow and rebuilding
+                        elasticity to reveal softer, smoother skin
+                        .
+                        For complete relief of the skin, this also includes Allantoin, a gentle anti-ager with the
+                        ability to stimulate the growth of new cells and facilitate collagen synthesis, aiding in wound
+                        recovery and scar prevention while alleviating inflamed skin and decreasing any itching or
+                        flaking; alongside Poria Cocos Sclerotium Extract, an antioxidant-rich mushroom derivative,
+                        which can heal at multiple levels, exhibiting a potent anti-inflammatory effect both externally
+                        and internally, to condition and keep flare-ups in check while rehabilitating a damaged or
+                        sensitised barrier
+                        .</p>
                 </div>
-                <div id="key-ingredients" class="description-item"><h3>Key Ingredients</h3>
-<p>-<br>Beta-Glucan (100% bio-sourced from Oat)<br>-<br>Panthenol<br>-<br>Allantoin</p></div>
+                <div id="key-ingredients" class="description-item">
+                    <h3>Key Ingredients</h3>
+                    <ul>
+                        <li>Beta-Glucan (100% bio-sourced from Oat)</li>
+                        <li>Panthenol</li>
+                        <li>Allantoin</li>
+                    </ul>
+                </div>
                 <div class="description-item">
                     <h3>Recommend for:</h3>
                     <ul>
                         <li>
-                            <strong>Oily, acne-prone skin</strong>
-                            <p>Looking to keep their complexion clear and shine-free.</p>
+                            <strong>All skin types/tones</strong>
                         </li>
                         <li>
-                            <strong>Mature, aging skin</strong>
-                            <p>Looking to repair past signs of damage and restore vitality.</p>
-                        </li>
-                        <li>
-                            <strong>Dry, sensitive skin</strong>
-                            <p>Looking to replenish skin and prevent premature skin aging.</p>
+                            <strong>Restoration seekers</strong>
+                            <p>Those wanting to calm and restore with a refreshing splash of hydration and additional
+                                soothing nutrients without adding weight onto the skin.</p>
                         </li>
                     </ul>
+                </div>
+                <div class="description-item">
+                    <h3>How to Use</h3>
+                    <p>Use twice daily. Dispense an appropriate amount into the palm of your hands or a cotton pad.
+                        Gently smooth over clean skin and press lightly onto cheeks, forehead and chin areas. Continue
+                        dabbing across face and neck until fully absorbed. Follow with serums and moisturizer. Wear SPF
+                        during the day.</p>
+                </div>
+                <div class="description-item">
+                    <h3>Cautions</h3>
+                    <p>1. Always do a patch test first.<br>2. Discontinue use and consult a doctor if irritation occurs.
+                    </p>
                 </div>
                 <div class="description-item">
                     <h3>Good to Know</h3>
@@ -141,10 +172,10 @@ and internally, to condition and keep flare-ups in check while rehabilitating a 
                     <a href="product.html">
                         <div class="product-image">
                             <div class="product-badge badge-hot">Hot</div>
-                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image main-image" loading="lazy">
-                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image hover-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image main-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image hover-image" loading="lazy">
                         </div>
                         <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                     </a>
@@ -246,7 +277,7 @@ and internally, to condition and keep flare-ups in check while rehabilitating a 
         <t-testimonials></t-testimonials>
 
     </main>
-    <t-footer></t-footer>
+    <t-footer root-path="../"></t-footer>
     <script type="module" src="../script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>

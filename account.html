@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -107,7 +108,7 @@
                                 <div class="item-details">
                                     <p>Product Name</p>
                                     <p>Quantity: 1</p>
-                                    <p>Price: $25.00</p>
+                                    <p>Price: RM 25.00</p>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +124,7 @@
                     <h2>Saved Addresses</h2>
                     <div class="address-card">
                         <h3>Default Shipping Address</h3>
-                        <p>123 Main St, Anytown, USA 12345</p>
+                        <p>123 Jalan Bukit Bintang, 55100 Kuala Lumpur, Malaysia</p>
                         <div class="address-actions">
                             <a href="#" class="btn-secondary">Edit</a>
                             <a href="#" class="btn-danger">Delete</a>
@@ -165,6 +166,17 @@
             </section>
         </div>
     </main>
+
+    <!-- Thank You Modal -->
+    <div id="thank-you-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="material-symbols-outlined modal-icon">check_circle</span>
+            <h3 class="modal-title">Thank You for Your Order!</h3>
+            <p class="modal-message">Your order has been successfully placed. We will contact you shortly with shipping
+                details.</p>
+            <button class="btn-primary modal-btn btn-close-modal">Continue Shopping</button>
+        </div>
+    </div>
 
     <!-- ==============================================
     #                                             #

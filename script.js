@@ -11,6 +11,8 @@ import { initLoadingOverlay } from './js/components/loading-overlay.js';
 import { initAccountNav } from './js/components/account-nav.js';
 import { initScrollAnimations } from './js/components/scroll-animations.js';
 import { initNewsletterForm } from './js/components/newsletter.js';
+import { initCartLogic } from './js/components/cart-logic.js';
+import { initAccountCart } from './js/components/account-cart.js';
 
 // Initialize Logic on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,4 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initAccountNav();
     initScrollAnimations();
     initNewsletterForm();
+    initCartLogic();
+    initAccountCart();
 });

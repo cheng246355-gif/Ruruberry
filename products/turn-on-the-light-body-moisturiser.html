@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <t-header></t-header>
+    <t-header root-path="../"></t-header>
 
     <main class="product-page-main">
         <section class="product-details-section">
@@ -31,17 +31,13 @@
                         alt="Main Product Image" id="main-product-image">
                 </div>
                 <div class="thumbnails">
-                    <img src="../images/Products/Turn_01-1200x1600.jpg" alt="Thumbnail 1"
-                        class="thumbnail active"
+                    <img src="../images/Products/Turn_01-1200x1600.jpg" alt="Thumbnail 1" class="thumbnail active"
                         data-large-src="../images/Products/Turn_01-1200x1600.jpg">
-                    <img src="../images/Products/Turn_01-1200x1600.jpg" alt="Thumbnail 2"
-                        class="thumbnail"
+                    <img src="../images/Products/Turn_01-1200x1600.jpg" alt="Thumbnail 2" class="thumbnail"
                         data-large-src="../images/Products/Turn_01-1200x1600.jpg">
-                    <img src="../images/Products/Turn_01-1200x1600.jpg" alt="Thumbnail 3"
-                        class="thumbnail"
+                    <img src="../images/Products/Turn_01-1200x1600.jpg" alt="Thumbnail 3" class="thumbnail"
                         data-large-src="../images/Products/Turn_01-1200x1600.jpg">
-                    <img src="../images/Products/Turn_01-1200x1600.jpg" alt="Thumbnail 4"
-                        class="thumbnail"
+                    <img src="../images/Products/Turn_01-1200x1600.jpg" alt="Thumbnail 4" class="thumbnail"
                         data-large-src="../images/Products/Turn_01-1200x1600.jpg">
                 </div>
             </div>
@@ -50,7 +46,14 @@
                 <p class="stock-status">In Stock</p>
                 <p class="product-code">Product Code: 9551003171019</p>
                 <p class="price">RM 58.00</p>
-                <div class="key-ingredients"><p><strong>Key Ingredients</strong></p><p></p></div>
+                <div class="key-ingredients">
+                    <p><strong>Key Ingredients</strong></p>
+                    <ul>
+                        <li>Tranexamic Acid</li>
+                        <li>Undecylenoyl Phenylalanine</li>
+                        <li>Raspberry Ketone</li>
+                    </ul>
+                </div>
                 <div class="product-actions">
                     <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
                 </div>
@@ -72,47 +75,59 @@
             <div class="description-content">
                 <div class="description-item">
                     <h3>What am i</h3>
-                    <p>\nA networked 13.5% brightening system to visibly counteract three of the most stubborn, complex-to-treat signs of skin discoloration: hyperpigmentation, age spots and melasma\n.\n</p>
+                    <p>\nA networked 13.5% brightening system to visibly counteract three of the most stubborn,
+                        complex-to-treat signs of skin discoloration: hyperpigmentation, age spots and melasma\n.\n</p>
                 </div>
                 <div class="description-item">
                     <h3>Why pick me</h3>
-                    <p>\nNETWORKED BRIGHTENING SYSTEM\nThis highly-focused, highly-saturated formula precisely targets and reduces both uneven pigmentation, in combination of post-inflammatory hyperpigmentation, as well as overall pigmentation issues, be it age spots/senile lentigines that comes with repeated UV exposure and age itself or melasma/chloasma that occurs at a younger age and is usually influenced by hormones, through optimisation of various modern technologies and mechanism meshed perfectly\n.\nTranexamic Acid\nA lysine amino acid derivative that competitively inhibits plasmin and blocks the plasminogen activation pathway to effectively slow the melanogenesis process and decrease melanin synthesis, at the same time disrupting the interactions between melanocytes and keratinocytes to systematically stop the uptake of melanosome into the upper layers of the skin resulting in dark spots.\nUndecylenoyl Phenylalanine\nAn amino acid derived molecule vectorised to prevent the overproduction and accumulation of melanin in a unique way, by supressing the activity of α‐melanocyte-stimulating hormone and β‐adrenergic receptor which promotes pigmentation thus halting its release exchange, to functionally lighten and repair irregularly pigmented areas while supporting a more even skin tone.\nRaspberry Ketone</p>
+                    <p>\nNETWORKED BRIGHTENING SYSTEM\nThis highly-focused, highly-saturated formula precisely targets
+                        and reduces both uneven pigmentation, in combination of post-inflammatory hyperpigmentation, as
+                        well as overall pigmentation issues, be it age spots/senile lentigines that comes with repeated
+                        UV exposure and age itself or melasma/chloasma that occurs at a younger age and is usually
+                        influenced by hormones, through optimisation of various modern technologies and mechanism meshed
+                        perfectly\n.\nTranexamic Acid\nA lysine amino acid derivative that competitively inhibits
+                        plasmin and blocks the plasminogen activation pathway to effectively slow the melanogenesis
+                        process and decrease melanin synthesis, at the same time disrupting the interactions between
+                        melanocytes and keratinocytes to systematically stop the uptake of melanosome into the upper
+                        layers of the skin resulting in dark spots.\nUndecylenoyl Phenylalanine\nAn amino acid derived
+                        molecule vectorised to prevent the overproduction and accumulation of melanin in a unique way,
+                        by supressing the activity of α‐melanocyte-stimulating hormone and β‐adrenergic receptor which
+                        promotes pigmentation thus halting its release exchange, to functionally lighten and repair
+                        irregularly pigmented areas while supporting a more even skin tone.\nRaspberry Ketone</p>
                 </div>
-                <div id="key-ingredients" class="description-item"><h3>Key Ingredients</h3>
-<p></p></div>
+                <div id="key-ingredients" class="description-item">
+                    <h3>Key Ingredients</h3>
+                    <ul>
+                        <li>Tranexamic Acid</li>
+                        <li>Undecylenoyl Phenylalanine</li>
+                        <li>Raspberry Ketone</li>
+                    </ul>
+                </div>
                 <div class="description-item">
                     <h3>Recommend for:</h3>
                     <ul>
                         <li>
-                            <strong>Oily, acne-prone skin</strong>
-                            <p>Looking to keep their complexion clear and shine-free.</p>
+                            <strong>All skin types/tones</strong>
                         </li>
                         <li>
-                            <strong>Mature, aging skin</strong>
-                            <p>Looking to repair past signs of damage and restore vitality.</p>
-                        </li>
-                        <li>
-                            <strong>Dry, sensitive skin</strong>
-                            <p>Looking to replenish skin and prevent premature skin aging.</p>
+                            <strong>Pigmentation concerns</strong>
+                            <p>Anyone with persistent or increased skin discoloration, age spots and melasma concerns as
+                                well as other issues of general and localised pigmentation that are becoming more
+                                pronounced in size, shape or intensity.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="description-item">
-                    <h3>Good to Know</h3>
-                    <p>It is actually perfectly safe and even beneficial to mix both Niacinamide and Sodium
-                        Ascorbyl
-                        Phosphate, either together in the same product or combined from layering different
-                        products. The
-                        worries about rendering them ineffective, resulting in a dreaded yellow solution,
-                        are
-                        fairly
-                        unjustified as that is merely a product of a harmless charge-transfer interaction;
-                        while
-                        they
-                        can in certain condition create Niacin, leading to a possible flush, that reaction
-                        will
-                        only
-                        occur under extreme heat over extended periods of time.</p>
+                    <h3>How to Use</h3>
+                    <p>After cleansing and toning, dispense 2-3 drops onto the palm of your hands before patting them
+                        onto your face. Add a couple more droplets if intending to apply across the neck and chest area.
+                        Finish with a moisturizer, ideally alongside SPF 30 or greater when used during the day.</p>
+                </div>
+                <div class="description-item">
+                    <h3>Cautions</h3>
+                    <p>For external use only. Keep out of reach of children. Store in a cool, dry place away from
+                        sunlight. Always do a patch test first. Discontinue use and consult a doctor if irritation
+                        occurs.</p>
                 </div>
             </div>
         </section>
@@ -135,10 +150,10 @@
                     <a href="product.html">
                         <div class="product-image">
                             <div class="product-badge badge-hot">Hot</div>
-                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image main-image" loading="lazy">
-                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image hover-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image main-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image hover-image" loading="lazy">
                         </div>
                         <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                     </a>
@@ -240,7 +255,7 @@
         <t-testimonials></t-testimonials>
 
     </main>
-    <t-footer></t-footer>
+    <t-footer root-path="../"></t-footer>
     <script type="module" src="../script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>

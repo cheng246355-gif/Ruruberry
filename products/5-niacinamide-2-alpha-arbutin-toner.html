@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <t-header></t-header>
+    <t-header root-path="../"></t-header>
 
     <main class="product-page-main">
         <section class="product-details-section">
@@ -31,17 +31,13 @@
                         alt="Main Product Image" id="main-product-image">
                 </div>
                 <div class="thumbnails">
-                    <img src="../images/Products/AAToner_03-1200x1600.jpg" alt="Thumbnail 1"
-                        class="thumbnail active"
+                    <img src="../images/Products/AAToner_03-1200x1600.jpg" alt="Thumbnail 1" class="thumbnail active"
                         data-large-src="../images/Products/AAToner_03-1200x1600.jpg">
-                    <img src="../images/Products/AAToner_03-1200x1600.jpg" alt="Thumbnail 2"
-                        class="thumbnail"
+                    <img src="../images/Products/AAToner_03-1200x1600.jpg" alt="Thumbnail 2" class="thumbnail"
                         data-large-src="../images/Products/AAToner_03-1200x1600.jpg">
-                    <img src="../images/Products/AAToner_03-1200x1600.jpg" alt="Thumbnail 3"
-                        class="thumbnail"
+                    <img src="../images/Products/AAToner_03-1200x1600.jpg" alt="Thumbnail 3" class="thumbnail"
                         data-large-src="../images/Products/AAToner_03-1200x1600.jpg">
-                    <img src="../images/Products/AAToner_03-1200x1600.jpg" alt="Thumbnail 4"
-                        class="thumbnail"
+                    <img src="../images/Products/AAToner_03-1200x1600.jpg" alt="Thumbnail 4" class="thumbnail"
                         data-large-src="../images/Products/AAToner_03-1200x1600.jpg">
                 </div>
             </div>
@@ -50,7 +46,13 @@
                 <p class="stock-status">In Stock</p>
                 <p class="product-code">Product Code: 9551003171019</p>
                 <p class="price">RM 68.00</p>
-                <div class="key-ingredients"><p><strong>Key Ingredients</strong></p><p>-<br>Alpha Arbutin [2%]<br>-<br>Acetyl Glucosamine</p></div>
+                <div class="key-ingredients">
+                    <p><strong>Key Ingredients</strong></p>
+                    <ul>
+                        <li>Alpha Arbutin [2%]</li>
+                        <li>Acetyl Glucosamine</li>
+                    </ul>
+                </div>
                 <div class="product-actions">
                     <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
                 </div>
@@ -72,49 +74,63 @@
             <div class="description-content">
                 <div class="description-item">
                     <h3>What am i</h3>
-                    <p>A high-concentration, pigment-lifting serum that fades existing dark spots and hyperpigmentation left behind by breakouts, sun damage or inflammation efficaciously for a more even complexion while preventing future discoloration from developing.</p>
+                    <p>A high-concentration, pigment-lifting serum that fades existing dark spots and hyperpigmentation
+                        left behind by breakouts, sun damage or inflammation efficaciously for a more even complexion
+                        while preventing future discoloration from developing.</p>
                 </div>
                 <div class="description-item">
                     <h3>Why pick me</h3>
-                    <p>Alpha Arbutin, derived from Arbutin (sometimes referred to as “natural hydroquinone”) traditionally extracted from bearberry plants, is a skin-lightening and depigmenting agent that mimics hydroquinone in the reversion of melanin generation but with a much better safety profile and none of the irritation or cytotoxicity connected to it. Being approximately ten times more effective than its less stable beta equivalent and having no known negative interactions with other common ingredients, this also makes a much more reliable option for treating and preventing pigmentation issues – no matter your skin type or age.
-Unlike hydroquinone which exhibits a fatal reaction to melanocytes (by killing the cells that makes pigment), Alpha Arbutin inhibits only tyrosinases activity (through blocking the enzymatic conversion that catalyses melanin synthesis) which is activated anytime the skin comes into contact with UV light to functionally slow your melanin production and melanosome maturation, reducing the degree of darkening if not averting the occurrence altogether. Much like its ability to fight discoloration, it is also great at eliminating post-blemish redness, age spots and pink/purple scarring while unifying your skin tone – providing a healthy, uniform glow.
-For optimal result, a maximum concentration of 2% is used together with N-Acetyl Glucosamine (a replenishing amino sugar and a precursor for the biosynthesis of hyaluronic acid), Aquaxyl™ (a patented moisturising and restructuring trio that reinforces the skin barrier) and Beta Glucan (a skin-soother and anti-ager with excellent plumping capacity) to enhance delivery and give your skin an effortless boost in hydration the same time it brightens</p>
+                    <p>Alpha Arbutin, derived from Arbutin (sometimes referred to as “natural hydroquinone”)
+                        traditionally extracted from bearberry plants, is a skin-lightening and depigmenting agent that
+                        mimics hydroquinone in the reversion of melanin generation but with a much better safety profile
+                        and none of the irritation or cytotoxicity connected to it. Being approximately ten times more
+                        effective than its less stable beta equivalent and having no known negative interactions with
+                        other common ingredients, this also makes a much more reliable option for treating and
+                        preventing pigmentation issues – no matter your skin type or age.
+                        Unlike hydroquinone which exhibits a fatal reaction to melanocytes (by killing the cells that
+                        makes pigment), Alpha Arbutin inhibits only tyrosinases activity (through blocking the enzymatic
+                        conversion that catalyses melanin synthesis) which is activated anytime the skin comes into
+                        contact with UV light to functionally slow your melanin production and melanosome maturation,
+                        reducing the degree of darkening if not averting the occurrence altogether. Much like its
+                        ability to fight discoloration, it is also great at eliminating post-blemish redness, age spots
+                        and pink/purple scarring while unifying your skin tone – providing a healthy, uniform glow.
+                        For optimal result, a maximum concentration of 2% is used together with N-Acetyl Glucosamine (a
+                        replenishing amino sugar and a precursor for the biosynthesis of hyaluronic acid), Aquaxyl™ (a
+                        patented moisturising and restructuring trio that reinforces the skin barrier) and Beta Glucan
+                        (a skin-soother and anti-ager with excellent plumping capacity) to enhance delivery and give
+                        your skin an effortless boost in hydration the same time it brightens</p>
                 </div>
-                <div id="key-ingredients" class="description-item"><h3>Key Ingredients</h3>
-<p>-<br>Alpha Arbutin [2%]<br>-<br>Acetyl Glucosamine</p></div>
+                <div id="key-ingredients" class="description-item">
+                    <h3>Key Ingredients</h3>
+                    <ul>
+                        <li>Alpha Arbutin [2%]</li>
+                        <li>Acetyl Glucosamine</li>
+                    </ul>
+                </div>
                 <div class="description-item">
                     <h3>Recommend for:</h3>
                     <ul>
                         <li>
-                            <strong>Oily, acne-prone skin</strong>
-                            <p>Looking to keep their complexion clear and shine-free.</p>
+                            <strong>All skin types/tones</strong>
                         </li>
                         <li>
-                            <strong>Mature, aging skin</strong>
-                            <p>Looking to repair past signs of damage and restore vitality.</p>
-                        </li>
-                        <li>
-                            <strong>Dry, sensitive skin</strong>
-                            <p>Looking to replenish skin and prevent premature skin aging.</p>
+                            <strong>Uneven complexion</strong>
+                            <p>Those whose complexion appears constantly blotchy and uneven, with persistent or
+                                recurrent dark patches that linger.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="description-item">
-                    <h3>Good to Know</h3>
-                    <p>It is actually perfectly safe and even beneficial to mix both Niacinamide and Sodium
-                        Ascorbyl
-                        Phosphate, either together in the same product or combined from layering different
-                        products. The
-                        worries about rendering them ineffective, resulting in a dreaded yellow solution,
-                        are
-                        fairly
-                        unjustified as that is merely a product of a harmless charge-transfer interaction;
-                        while
-                        they
-                        can in certain condition create Niacin, leading to a possible flush, that reaction
-                        will
-                        only
-                        occur under extreme heat over extended periods of time.</p>
+                    <h3>How to Use</h3>
+                    <p>Use twice daily. Slightly shake before dispensing an appropriate amount into the palm of your
+                        hands or a cotton pad. Gently smooth over clean skin and press lightly onto cheeks, forehead and
+                        chin areas. Continue dabbing across face and neck until fully absorbed. Follow with serums and
+                        moisturizer. Wear SPF during the day.</p>
+                </div>
+                <div class="description-item">
+                    <h3>Cautions</h3>
+                    <p>1. Always do a patch test first.<br>2. Discontinue use and consult a doctor if irritation occurs.
+                    </p>
                 </div>
             </div>
         </section>
@@ -137,10 +153,10 @@ For optimal result, a maximum concentration of 2% is used together with N-Acetyl
                     <a href="product.html">
                         <div class="product-image">
                             <div class="product-badge badge-hot">Hot</div>
-                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image main-image" loading="lazy">
-                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image hover-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image main-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image hover-image" loading="lazy">
                         </div>
                         <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                     </a>
@@ -242,7 +258,7 @@ For optimal result, a maximum concentration of 2% is used together with N-Acetyl
         <t-testimonials></t-testimonials>
 
     </main>
-    <t-footer></t-footer>
+    <t-footer root-path="../"></t-footer>
     <script type="module" src="../script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>

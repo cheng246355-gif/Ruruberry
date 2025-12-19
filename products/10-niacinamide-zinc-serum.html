@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <t-header></t-header>
+    <t-header root-path="../"></t-header>
 
     <main class="product-page-main">
         <section class="product-details-section">
@@ -52,8 +52,10 @@
                 <p class="price">RM 45.00</p>
                 <div class="key-ingredients">
                     <p><strong>Key Ingredients</strong></p>
-                    <p>- Niacinamide (Vitamin B3) [10%]</p>
-                    <p>- Zinc PCA [1%]</p>
+                    <ul>
+                        <li>Niacinamide (Vitamin B3) [10%]</li>
+                        <li>Zinc PCA [1%]</li>
+                    </ul>
                 </div>
                 <div class="product-actions">
                     <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
@@ -110,12 +112,10 @@
                 </div>
                 <div id="key-ingredients" class="description-item">
                     <h3>Key Ingredients</h3>
-                    <p>Niacinamide: A vitamin that brightens skin, reduces the appearance of blemishes, and
-                        balances
-                        sebum activity. Zinc PCA: A mineral that helps to control oil production and reduce
-                        the
-                        look of
-                        enlarged pores.</p>
+                    <ul>
+                        <li>Niacinamide (Vitamin B3) [10%]</li>
+                        <li>Zinc PCA [1%]</li>
+                    </ul>
                 </div>
                 <div class="description-item">
                     <h3>Recommend for:</h3>
@@ -172,10 +172,10 @@
                     <a href="product.html">
                         <div class="product-image">
                             <div class="product-badge badge-hot">Hot</div>
-                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image main-image" loading="lazy">
-                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image hover-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image main-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image hover-image" loading="lazy">
                         </div>
                         <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                     </a>
@@ -277,7 +277,7 @@
         <t-testimonials></t-testimonials>
 
     </main>
-    <t-footer></t-footer>
+    <t-footer root-path="../"></t-footer>
     <script type="module" src="../script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>

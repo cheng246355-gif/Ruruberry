@@ -7,7 +7,6 @@
 .btn-primary {
     padding: 15px 40px;
     background: rgba(var(--color-white-rgb), 0.35);
-    /* Use RGB for transparency */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     color: var(--color-dark);
@@ -17,14 +16,12 @@
     font-size: var(--fs-body);
     font-weight: var(--fw-medium);
     border: 2px solid rgba(var(--color-white-rgb), 0.5);
-    /* Use RGB for transparency */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
     background: rgba(var(--color-white-rgb), 0.5);
-    /* Use RGB for transparency */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transform: translateY(-2px);
 }
@@ -56,7 +53,6 @@
 .testimonials {
     padding: 80px 120px;
     background-image: url('../images/Home/testimonials.jpg');
-    /* Adjusted path */
     background-size: cover;
     position: relative;
     margin-bottom: 4rem;
@@ -96,9 +92,7 @@
 .testimonial-card {
     min-width: 350px;
     background: rgba(var(--color-white-rgb), 0.8);
-    /* Optimized: Replaced blur with solid transparency */
     border: 1px solid rgba(var(--color-white-rgb), 0.9);
-    /* Adjusted border */
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -133,9 +127,7 @@
     width: 40px;
     height: 40px;
     background: rgba(var(--color-white-rgb), 0.8);
-    /* Optimized: Replaced blur with solid transparency */
     border: 1px solid rgba(var(--color-white-rgb), 0.9);
-    /* Adjusted border */
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
@@ -225,7 +217,6 @@
     border-radius: 24px;
     overflow: hidden;
     transition: transform 0.3s;
-    /* Optimized: Removed box-shadow from transition */
     border: 1px solid var(--color-border);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -243,22 +234,42 @@
 }
 
 .product-image {
-    width: 100%;
-    aspect-ratio: 1 / 1.25;
-    overflow: hidden;
-    border-radius: 12px;
     position: relative;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 12px;
     margin-bottom: 20px;
     background: var(--color-light);
 }
 
-.product-image img {
+.product-card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.product-card-image.main-image {
+    position: relative;
+    z-index: 0;
+}
+
+.hover-image {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .hover-image {
+    opacity: 1;
 }
 
 .product-name,
@@ -291,7 +302,6 @@
 
 .badge-hot {
     background-color: var(--color-error);
-    /* mapped to error for a red color */
 }
 
 .badge-new {
@@ -402,9 +412,7 @@
 .philosophy-image {
     width: 100%;
     aspect-ratio: 1 / 1;
-    /* Make it square */
     max-height: 480px;
-    /* Set a maximum height */
     border-radius: 24px;
     background: var(--color-secondary);
     margin: 0 auto 30px;
@@ -527,16 +535,11 @@
     gap: 30px;
     overflow-x: auto;
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
     padding-bottom: 20px;
-    /* Space for potential scrollbar */
     justify-content: flex-start;
-    /* Align items to the start */
     align-items: stretch;
     grid-template-columns: none;
-    /* Override grid */
 }
 
 .products-grid.slider::-webkit-scrollbar {
@@ -545,7 +548,6 @@
 
 .products-grid.slider .product-card {
     flex: 0 0 calc(25% - 22.5px);
-    /* 4 items visible: (100% - 3*30px) / 4 */
 }
 
 .section-header {
@@ -603,13 +605,12 @@
 
     .products-grid.slider .product-card {
         flex: 0 0 calc(50% - 10px);
-        /* Show 2 cards per view */
         scroll-snap-align: center;
     }
 }
 
 /* Mobile Responsive Bestsellers */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .bestsellers {
         padding: 60px 20px;
     }
@@ -619,7 +620,6 @@
     }
 
     .products-grid.slider .product-card {
-        flex: 0 0 100%;
-        /* Show 1 card per view */
+        flex: 0 0 calc(50% - 15px);
     }
 }

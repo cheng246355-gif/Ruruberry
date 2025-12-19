@@ -194,6 +194,14 @@
         padding: 40px 20px;
     }
 
+    .article img {
+        height: 250px;
+    }
+
+    .featured-post img {
+        height: 250px;
+    }
+
     .pagination-control {
         padding: 40px 20px;
     }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <t-header></t-header>
+    <t-header root-path="../"></t-header>
 
     <main class="product-page-main">
         <section class="product-details-section">
@@ -32,16 +32,12 @@
                 </div>
                 <div class="thumbnails">
                     <img src="../images/Products/CeramicCream_01-1200x1600.jpg" alt="Thumbnail 1"
-                        class="thumbnail active"
+                        class="thumbnail active" data-large-src="../images/Products/CeramicCream_01-1200x1600.jpg">
+                    <img src="../images/Products/CeramicCream_01-1200x1600.jpg" alt="Thumbnail 2" class="thumbnail"
                         data-large-src="../images/Products/CeramicCream_01-1200x1600.jpg">
-                    <img src="../images/Products/CeramicCream_01-1200x1600.jpg" alt="Thumbnail 2"
-                        class="thumbnail"
+                    <img src="../images/Products/CeramicCream_01-1200x1600.jpg" alt="Thumbnail 3" class="thumbnail"
                         data-large-src="../images/Products/CeramicCream_01-1200x1600.jpg">
-                    <img src="../images/Products/CeramicCream_01-1200x1600.jpg" alt="Thumbnail 3"
-                        class="thumbnail"
-                        data-large-src="../images/Products/CeramicCream_01-1200x1600.jpg">
-                    <img src="../images/Products/CeramicCream_01-1200x1600.jpg" alt="Thumbnail 4"
-                        class="thumbnail"
+                    <img src="../images/Products/CeramicCream_01-1200x1600.jpg" alt="Thumbnail 4" class="thumbnail"
                         data-large-src="../images/Products/CeramicCream_01-1200x1600.jpg">
                 </div>
             </div>
@@ -50,7 +46,17 @@
                 <p class="stock-status">In Stock</p>
                 <p class="product-code">Product Code: 9551003171019</p>
                 <p class="price">RM 88.00</p>
-                <div class="key-ingredients"><p><strong>Key Ingredients</strong></p><p></p></div>
+                <div class="key-ingredients">
+                    <p><strong>Key Ingredients</strong></p>
+                    <ul>
+                        <li>Ceramides (NP, AP, EOP)</li>
+                        <li>Phytosphingosine & Cholesterol</li>
+                        <li>Phytosteryl/Octyldodecyl Lauroyl Glutamate</li>
+                        <li>Poria Cocos Sclerotium Extract</li>
+                        <li>Portulaca Oleracea Extract</li>
+                        <li>Panthenol (Vitamin B5)</li>
+                    </ul>
+                </div>
                 <div class="product-actions">
                     <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
                 </div>
@@ -72,47 +78,72 @@
             <div class="description-content">
                 <div class="description-item">
                     <h3>What am i</h3>
-                    <p>A multi-faceted rescue moisturiser to restore and rebuild the protective moisture barrier of depleted, stressed skin while delivering long-lasting hydration and comfort for a fresh, supple glow .</p>
+                    <p>A multi-faceted rescue moisturiser to restore and rebuild the protective moisture barrier of
+                        depleted, stressed skin while delivering long-lasting hydration and comfort for a fresh, supple
+                        glow .</p>
                 </div>
                 <div class="description-item">
                     <h3>Why pick me</h3>
-                    <p>Ceramides are very important lipid molecules that make up about half of your stratum corneum, essentially the glue that holds our skin cells together to keep our skin barrier intact and healthy, contributing to forming and creating a strong and resilient outer layer that serves as an effective shield to seal in moisture and seal out harmful elements, key for maintaining long-term hydration and blocking visible damage from environmental stressors. Our formula contains a blend of three essential ceramides that are identical to those found naturally in skin and work best for the skin, helping to synergistically support and strengthen this lipid layer by replenishing those wax-like ceramides where they are most needed, completed with phytosphingosine and cholesterol for accelerated barrier recovery, preserving its structure and integrity while limiting transepidermal water loss, calming signs of sensitivity, and simultaneously reducing the appearance of fine lines and wrinkles . For enhanced skin moisturisation and protection, we incorporated Phytosteryl/Octyldodecyl Lauroyl Glutamate, a ceramide-like derivative that functions similar to intercellular lipids with high affinity for the skin, which alleviates and moisturises as soon as it is applied, to condition and reinforce the skin barrier function even further, softening the surface texture and smoothing any dry or flaky patches as well, for a drastically improved look and feel . To provide all-dimensional skin relieving, this also includes Poria Cocos Sclerium Extract, which can heal at multiple levels, producing an anti-inflammatory effect both externally and internally, to prevent irritation and flare-ups from developing while rehabilitating a damaged or sensitised complexion; alongside Portulaca Oleracea Extract, loaded with omega-3 fatty acids for immunity boosting and other vital nutrients that will help keep the microbiome nourished and balanced, at the same time rejuvenating skin that has become lax/crepey</p>
+                    <p>Ceramides are very important lipid molecules that make up about half of your stratum corneum,
+                        essentially the glue that holds our skin cells together to keep our skin barrier intact and
+                        healthy, contributing to forming and creating a strong and resilient outer layer that serves as
+                        an effective shield to seal in moisture and seal out harmful elements, key for maintaining
+                        long-term hydration and blocking visible damage from environmental stressors. Our formula
+                        contains a blend of three essential ceramides that are identical to those found naturally in
+                        skin and work best for the skin, helping to synergistically support and strengthen this lipid
+                        layer by replenishing those wax-like ceramides where they are most needed, completed with
+                        phytosphingosine and cholesterol for accelerated barrier recovery, preserving its structure and
+                        integrity while limiting transepidermal water loss, calming signs of sensitivity, and
+                        simultaneously reducing the appearance of fine lines and wrinkles . For enhanced skin
+                        moisturisation and protection, we incorporated Phytosteryl/Octyldodecyl Lauroyl Glutamate, a
+                        ceramide-like derivative that functions similar to intercellular lipids with high affinity for
+                        the skin, which alleviates and moisturises as soon as it is applied, to condition and reinforce
+                        the skin barrier function even further, softening the surface texture and smoothing any dry or
+                        flaky patches as well, for a drastically improved look and feel . To provide all-dimensional
+                        skin relieving, this also includes Poria Cocos Sclerium Extract, which can heal at multiple
+                        levels, producing an anti-inflammatory effect both externally and internally, to prevent
+                        irritation and flare-ups from developing while rehabilitating a damaged or sensitised
+                        complexion; alongside Portulaca Oleracea Extract, loaded with omega-3 fatty acids for immunity
+                        boosting and other vital nutrients that will help keep the microbiome nourished and balanced, at
+                        the same time rejuvenating skin that has become lax/crepey</p>
                 </div>
-                <div id="key-ingredients" class="description-item"><h3>Key Ingredients</h3>
-<p></p></div>
+                <div id="key-ingredients" class="description-item">
+                    <h3>Key Ingredients</h3>
+                    <ul>
+                        <li>Ceramides (NP, AP, EOP)</li>
+                        <li>Phytosphingosine & Cholesterol</li>
+                        <li>Phytosteryl/Octyldodecyl Lauroyl Glutamate</li>
+                        <li>Poria Cocos Sclerotium Extract</li>
+                        <li>Portulaca Oleracea Extract</li>
+                        <li>Panthenol (Vitamin B5)</li>
+                    </ul>
+                </div>
                 <div class="description-item">
                     <h3>Recommend for:</h3>
                     <ul>
                         <li>
-                            <strong>Oily, acne-prone skin</strong>
-                            <p>Looking to keep their complexion clear and shine-free.</p>
+                            <strong>All skin types</strong>
+                            <p>Including sensitive skin.</p>
                         </li>
                         <li>
-                            <strong>Mature, aging skin</strong>
-                            <p>Looking to repair past signs of damage and restore vitality.</p>
+                            <strong>Damaged barrier</strong>
+                            <p>Anyone with a damaged moisture barrier or stressed-out skin.</p>
                         </li>
                         <li>
-                            <strong>Dry, sensitive skin</strong>
-                            <p>Looking to replenish skin and prevent premature skin aging.</p>
+                            <strong>Post-exfoliation</strong>
+                            <p>Those wanting to round off an exfoliating regimen with a soothing component.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="description-item">
-                    <h3>Good to Know</h3>
-                    <p>It is actually perfectly safe and even beneficial to mix both Niacinamide and Sodium
-                        Ascorbyl
-                        Phosphate, either together in the same product or combined from layering different
-                        products. The
-                        worries about rendering them ineffective, resulting in a dreaded yellow solution,
-                        are
-                        fairly
-                        unjustified as that is merely a product of a harmless charge-transfer interaction;
-                        while
-                        they
-                        can in certain condition create Niacin, leading to a possible flush, that reaction
-                        will
-                        only
-                        occur under extreme heat over extended periods of time.</p>
+                    <h3>How to Use</h3>
+                    <p>Dispense an appropriate amount into the palm of your hands and lightly massage onto your face,
+                        neck and chest using upward motions. Layer after toner and serums AM and PM. Finish with an SPF
+                        during the day.</p>
+                </div>
+                <div class="description-item">
+                    <h3>Cautions</h3>
+                    <p>Always do a patch test first. Discontinue use and consult a doctor if irritation occurs.</p>
                 </div>
             </div>
         </section>
@@ -135,10 +166,10 @@
                     <a href="product.html">
                         <div class="product-image">
                             <div class="product-badge badge-hot">Hot</div>
-                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image main-image" loading="lazy">
-                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image hover-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image main-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image hover-image" loading="lazy">
                         </div>
                         <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                     </a>
@@ -240,7 +271,7 @@
         <t-testimonials></t-testimonials>
 
     </main>
-    <t-footer></t-footer>
+    <t-footer root-path="../"></t-footer>
     <script type="module" src="../script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>

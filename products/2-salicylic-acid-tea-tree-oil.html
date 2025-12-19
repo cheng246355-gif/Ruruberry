@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <t-header></t-header>
+    <t-header root-path="../"></t-header>
 
     <main class="product-page-main">
         <section class="product-details-section">
@@ -31,17 +31,13 @@
                         alt="Main Product Image" id="main-product-image">
                 </div>
                 <div class="thumbnails">
-                    <img src="../images/Products/2BHA_01-1200x1600.jpg" alt="Thumbnail 1"
-                        class="thumbnail active"
+                    <img src="../images/Products/2BHA_01-1200x1600.jpg" alt="Thumbnail 1" class="thumbnail active"
                         data-large-src="../images/Products/2BHA_01-1200x1600.jpg">
-                    <img src="../images/Products/2BHA_01-1200x1600.jpg" alt="Thumbnail 2"
-                        class="thumbnail"
+                    <img src="../images/Products/2BHA_01-1200x1600.jpg" alt="Thumbnail 2" class="thumbnail"
                         data-large-src="../images/Products/2BHA_01-1200x1600.jpg">
-                    <img src="../images/Products/2BHA_01-1200x1600.jpg" alt="Thumbnail 3"
-                        class="thumbnail"
+                    <img src="../images/Products/2BHA_01-1200x1600.jpg" alt="Thumbnail 3" class="thumbnail"
                         data-large-src="../images/Products/2BHA_01-1200x1600.jpg">
-                    <img src="../images/Products/2BHA_01-1200x1600.jpg" alt="Thumbnail 4"
-                        class="thumbnail"
+                    <img src="../images/Products/2BHA_01-1200x1600.jpg" alt="Thumbnail 4" class="thumbnail"
                         data-large-src="../images/Products/2BHA_01-1200x1600.jpg">
                 </div>
             </div>
@@ -50,7 +46,15 @@
                 <p class="stock-status">In Stock</p>
                 <p class="product-code">Product Code: 9551003171019</p>
                 <p class="price">RM 58.00</p>
-                <div class="key-ingredients"><p><strong>Key Ingredients</strong></p><p>-<br>Salicylic Acid [2%]<br>-<br>Hydrolyzed Soy Protein<br>-<br>Beta-Glucan (100% bio-sourced, derived from oat)<br>-<br>Fucogel® (Biosaccharide Gum-1)</p></div>
+                <div class="key-ingredients">
+                    <p><strong>Key Ingredients</strong></p>
+                    <ul>
+                        <li>Salicylic Acid [2%]</li>
+                        <li>Hydrolyzed Soy Protein</li>
+                        <li>Beta-Glucan (100% bio-sourced, derived from oat)</li>
+                        <li>Fucogel® (Biosaccharide Gum-1)</li>
+                    </ul>
+                </div>
                 <div class="product-actions">
                     <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
                 </div>
@@ -72,49 +76,61 @@
             <div class="description-content">
                 <div class="description-item">
                     <h3>What am i</h3>
-                    <p>A non-abrasive, pore-clarifying serum that intensively exfoliates and removes acne-, blackhead- and whitehead-causing buildup from deep within to significantly refine the health and appearance of congested skin for a clearer, more uniform complexion.</p>
+                    <p>A non-abrasive, pore-clarifying serum that intensively exfoliates and removes acne-, blackhead-
+                        and whitehead-causing buildup from deep within to significantly refine the health and appearance
+                        of congested skin for a clearer, more uniform complexion.</p>
                 </div>
                 <div class="description-item">
                     <h3>Why pick me</h3>
-                    <p>Salicylic Acid is the strongest, most common beta hydroxy acid (BHA) hailed for its extensive exfoliating abilities on both the skin surface as well as the pore lining; that acts as a desmolytic agent, loosening and breaking the attachment between cells, to stimulate the formation of new cells while urging the shedding of spent ones for a healthier turnover.
-Being fat-soluble, keratolytic and anti-inflammatory; Salicylic Acid is able to reach deeper into the lipid layers, passing through sebum and sebaceous follicles more readily, to gently soften and evenly dissolve any impurities, including excess oil or dead skin accumulation, trapped inside the pores – and prevent future clogs or blockages from developing – while also reducing skin redness and swelling.
-Counterbalancing the potentially drying effects; skin-conditioning Hydrolyzed Soy Protein, which can increase the skin’s natural water-holding capacity, and barrier-boosting Beta-Glucan, which has 20% more plumping power than hyaluronic acid of the same concentration, are incorporated to help lock hydration in and prevent moisture loss. In addition, multi-functional Fucogel® is also combined to provide total comfort and shield against irritation.</p>
+                    <p>Salicylic Acid is the strongest, most common beta hydroxy acid (BHA) hailed for its extensive
+                        exfoliating abilities on both the skin surface as well as the pore lining; that acts as a
+                        desmolytic agent, loosening and breaking the attachment between cells, to stimulate the
+                        formation of new cells while urging the shedding of spent ones for a healthier turnover.
+                        Being fat-soluble, keratolytic and anti-inflammatory; Salicylic Acid is able to reach deeper
+                        into the lipid layers, passing through sebum and sebaceous follicles more readily, to gently
+                        soften and evenly dissolve any impurities, including excess oil or dead skin accumulation,
+                        trapped inside the pores – and prevent future clogs or blockages from developing – while also
+                        reducing skin redness and swelling.
+                        Counterbalancing the potentially drying effects; skin-conditioning Hydrolyzed Soy Protein, which
+                        can increase the skin’s natural water-holding capacity, and barrier-boosting Beta-Glucan, which
+                        has 20% more plumping power than hyaluronic acid of the same concentration, are incorporated to
+                        help lock hydration in and prevent moisture loss. In addition, multi-functional Fucogel® is also
+                        combined to provide total comfort and shield against irritation.</p>
                 </div>
-                <div id="key-ingredients" class="description-item"><h3>Key Ingredients</h3>
-<p>-<br>Salicylic Acid [2%]<br>-<br>Hydrolyzed Soy Protein<br>-<br>Beta-Glucan (100% bio-sourced, derived from oat)<br>-<br>Fucogel® (Biosaccharide Gum-1)</p></div>
+                <div id="key-ingredients" class="description-item">
+                    <h3>Key Ingredients</h3>
+                    <ul>
+                        <li>Salicylic Acid [2%]</li>
+                        <li>Hydrolyzed Soy Protein</li>
+                        <li>Beta-Glucan (100% bio-sourced, derived from oat)</li>
+                        <li>Fucogel® (Biosaccharide Gum-1)</li>
+                    </ul>
+                </div>
                 <div class="description-item">
                     <h3>Recommend for:</h3>
                     <ul>
                         <li>
-                            <strong>Oily, acne-prone skin</strong>
-                            <p>Looking to keep their complexion clear and shine-free.</p>
+                            <strong>All skin types</strong>
+                            <p>Even bumpy skin disposed to milia.</p>
                         </li>
                         <li>
-                            <strong>Mature, aging skin</strong>
-                            <p>Looking to repair past signs of damage and restore vitality.</p>
-                        </li>
-                        <li>
-                            <strong>Dry, sensitive skin</strong>
-                            <p>Looking to replenish skin and prevent premature skin aging.</p>
+                            <strong>Blemish-prone skin</strong>
+                            <p>Anyone wishing to noticeably improve the tone and texture of stressed, blemish-prone skin
+                                while reducing the visibility, frequency and severity of flare-ups or breakouts.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="description-item">
                     <h3>Good to Know</h3>
-                    <p>It is actually perfectly safe and even beneficial to mix both Niacinamide and Sodium
-                        Ascorbyl
-                        Phosphate, either together in the same product or combined from layering different
-                        products. The
-                        worries about rendering them ineffective, resulting in a dreaded yellow solution,
-                        are
-                        fairly
-                        unjustified as that is merely a product of a harmless charge-transfer interaction;
-                        while
-                        they
-                        can in certain condition create Niacin, leading to a possible flush, that reaction
-                        will
-                        only
-                        occur under extreme heat over extended periods of time.</p>
+                    <p>This salicylic serum contains beta hydroxy acid that may heighten your skin’s sensitivity to the
+                        sun and risk the possibility of sunburn, which is why it would serve more appropriate as part of
+                        your nighttime routine. Start slow (about once a week) to gradually build up tolerance before
+                        increasing the usage, and limit sun exposure while using this product.</p>
+                    <p>The first few uses might also cause slight facial redness, mild burning/warming or occasional
+                        stinging/tingling sensation on or around the site of application, but these should diminish
+                        after several uses as directed. Avoid mixing salicylic acid with products containing retinol,
+                        benzoyl peroxide and various chemical or physical exfoliants at the same time to decrease the
+                        possibility of irritating or over-drying the skin.</p>
                 </div>
             </div>
         </section>
@@ -137,10 +153,10 @@ Counterbalancing the potentially drying effects; skin-conditioning Hydrolyzed So
                     <a href="product.html">
                         <div class="product-image">
                             <div class="product-badge badge-hot">Hot</div>
-                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image main-image" loading="lazy">
-                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image hover-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image main-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image hover-image" loading="lazy">
                         </div>
                         <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                     </a>
@@ -242,7 +258,7 @@ Counterbalancing the potentially drying effects; skin-conditioning Hydrolyzed So
         <t-testimonials></t-testimonials>
 
     </main>
-    <t-footer></t-footer>
+    <t-footer root-path="../"></t-footer>
     <script type="module" src="../script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>

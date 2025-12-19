@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <t-header></t-header>
+    <t-header root-path="../"></t-header>
 
     <main class="product-page-main">
         <section class="product-details-section">
@@ -32,16 +32,12 @@
                 </div>
                 <div class="thumbnails">
                     <img src="../images/Products/NiaGelCream_01-1200x1600.jpg" alt="Thumbnail 1"
-                        class="thumbnail active"
+                        class="thumbnail active" data-large-src="../images/Products/NiaGelCream_01-1200x1600.jpg">
+                    <img src="../images/Products/NiaGelCream_01-1200x1600.jpg" alt="Thumbnail 2" class="thumbnail"
                         data-large-src="../images/Products/NiaGelCream_01-1200x1600.jpg">
-                    <img src="../images/Products/NiaGelCream_01-1200x1600.jpg" alt="Thumbnail 2"
-                        class="thumbnail"
+                    <img src="../images/Products/NiaGelCream_01-1200x1600.jpg" alt="Thumbnail 3" class="thumbnail"
                         data-large-src="../images/Products/NiaGelCream_01-1200x1600.jpg">
-                    <img src="../images/Products/NiaGelCream_01-1200x1600.jpg" alt="Thumbnail 3"
-                        class="thumbnail"
-                        data-large-src="../images/Products/NiaGelCream_01-1200x1600.jpg">
-                    <img src="../images/Products/NiaGelCream_01-1200x1600.jpg" alt="Thumbnail 4"
-                        class="thumbnail"
+                    <img src="../images/Products/NiaGelCream_01-1200x1600.jpg" alt="Thumbnail 4" class="thumbnail"
                         data-large-src="../images/Products/NiaGelCream_01-1200x1600.jpg">
                 </div>
             </div>
@@ -50,7 +46,13 @@
                 <p class="stock-status">In Stock</p>
                 <p class="product-code">Product Code: 9551003171019</p>
                 <p class="price">RM 78.00</p>
-                <div class="key-ingredients"><p><strong>Key Ingredients</strong></p><p>-<br>Niacinamide (Vitamin B3) [5%]<br>-<br>Allantoin</p></div>
+                <div class="key-ingredients">
+                    <p><strong>Key Ingredients</strong></p>
+                    <ul>
+                        <li>Niacinamide (Vitamin B3) [5%]</li>
+                        <li>Allantoin</li>
+                    </ul>
+                </div>
                 <div class="product-actions">
                     <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
                 </div>
@@ -72,35 +74,65 @@
             <div class="description-content">
                 <div class="description-item">
                     <h3>What am i</h3>
-                    <p>A breathable, dual-action moisturizer to strengthen and repair the skin’s natural barrier while establishing a healthy, adaptive hydration balance and seal for a soft, dewy and poreless look
-.</p>
+                    <p>A breathable, dual-action moisturizer to strengthen and repair the skin’s natural barrier while
+                        establishing a healthy, adaptive hydration balance and seal for a soft, dewy and poreless look
+                        .</p>
                 </div>
                 <div class="description-item">
                     <h3>Why pick me</h3>
-                    <p>Niacinamide, a form of Vitamin B3 that replenishes the skin and helps maintain proper barrier function, is a proven smart and multitasking ingredient that works synergistically with the natural substance in your skin to regulate pigment-making cells, normalize sebum production, tighten lax pores, tackle inflammatory acne, smooth rough texture and visibly brighten tone while keeping our skin’s microbiota balanced.
-We uses highly-purified Niacinamide (Nicotinic Acid ≤ 100 ppm) that is least likely to induce a flushing response, penetrates well into the skin and can be readily absorbed by the skin with a favourable safety and tolerability profile. In addition to being versatile for nearly every major concerns, it is also desirable on virtually any skin type and plays nicely with an extensive variety of skincare actives for optimal results without irritating
-.
-Our experiential formula features 5% concentration of Niacinamide – effective yet well-tolerated for day and night use even on sensitive skin – alongside a careful blend of classic: Allantoin, that supports overall remodeling and soothes aggravated skin while rejuvenating the cells and facilitating collagen synthesis, and innovative: Capryloyl Salicylic Acid (LHA), which allows for gentle exfoliation of excess oil and debris clogging your pores at the same time eliminating surface dead skin buildup; Phytosteryl/Octyldodecyl Lauroyl Glutamate, a ceramide-like derivative with high affinity for the skin to provide immediate comfort, prevent moisture loss and protect against infection as soon as it is applied
-.</p>
+                    <p>Niacinamide, a form of Vitamin B3 that replenishes the skin and helps maintain proper barrier
+                        function, is a proven smart and multitasking ingredient that works synergistically with the
+                        natural substance in your skin to regulate pigment-making cells, normalize sebum production,
+                        tighten lax pores, tackle inflammatory acne, smooth rough texture and visibly brighten tone
+                        while keeping our skin’s microbiota balanced.
+                        We uses highly-purified Niacinamide (Nicotinic Acid ≤ 100 ppm) that is least likely to induce a
+                        flushing response, penetrates well into the skin and can be readily absorbed by the skin with a
+                        favourable safety and tolerability profile. In addition to being versatile for nearly every
+                        major concerns, it is also desirable on virtually any skin type and plays nicely with an
+                        extensive variety of skincare actives for optimal results without irritating
+                        .
+                        Our experiential formula features 5% concentration of Niacinamide – effective yet well-tolerated
+                        for day and night use even on sensitive skin – alongside a careful blend of classic: Allantoin,
+                        that supports overall remodeling and soothes aggravated skin while rejuvenating the cells and
+                        facilitating collagen synthesis, and innovative: Capryloyl Salicylic Acid (LHA), which allows
+                        for gentle exfoliation of excess oil and debris clogging your pores at the same time eliminating
+                        surface dead skin buildup; Phytosteryl/Octyldodecyl Lauroyl Glutamate, a ceramide-like
+                        derivative with high affinity for the skin to provide immediate comfort, prevent moisture loss
+                        and protect against infection as soon as it is applied
+                        .</p>
                 </div>
-                <div id="key-ingredients" class="description-item"><h3>Key Ingredients</h3>
-<p>-<br>Niacinamide (Vitamin B3) [5%]<br>-<br>Allantoin</p></div>
+                <div id="key-ingredients" class="description-item">
+                    <h3>Key Ingredients</h3>
+                    <ul>
+                        <li>Niacinamide (Vitamin B3) [5%]</li>
+                        <li>Allantoin</li>
+                    </ul>
+                </div>
                 <div class="description-item">
                     <h3>Recommend for:</h3>
                     <ul>
                         <li>
-                            <strong>Oily, acne-prone skin</strong>
-                            <p>Looking to keep their complexion clear and shine-free.</p>
+                            <strong>All skin types</strong>
+                            <p>Including sensitive.</p>
                         </li>
                         <li>
-                            <strong>Mature, aging skin</strong>
-                            <p>Looking to repair past signs of damage and restore vitality.</p>
-                        </li>
-                        <li>
-                            <strong>Dry, sensitive skin</strong>
-                            <p>Looking to replenish skin and prevent premature skin aging.</p>
+                            <strong>Those wanting a weightless option</strong>
+                            <p>Those wanting a weightless yet nourishing option that spreads easily and evenly absorbs
+                                to decongest, replenish and enhance without feeling heavy, thick or greasy.</p>
                         </li>
                     </ul>
+                </div>
+                <div class="description-item">
+                    <h3>How to Use</h3>
+                    <p>Dispense an appropriate amount into the palm of your hands and lightly massage onto your face,
+                        neck and chest using upward motions. Layer after toner and serums AM and PM. Finish with an SPF
+                        during the day.</p>
+                </div>
+                <div class="description-item">
+                    <h3>Cautions</h3>
+                    <p>1. For external use only. Keep out of reach of children.<br>2. Store in a cool, dry place away
+                        from sunlight.<br>3. Always do a patch test first. Discontinue use and consult a doctor if
+                        irritation occurs.</p>
                 </div>
                 <div class="description-item">
                     <h3>Good to Know</h3>
@@ -140,10 +172,10 @@ Our experiential formula features 5% concentration of Niacinamide – effective 
                     <a href="product.html">
                         <div class="product-image">
                             <div class="product-badge badge-hot">Hot</div>
-                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image main-image" loading="lazy">
-                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image hover-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image main-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image hover-image" loading="lazy">
                         </div>
                         <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                     </a>
@@ -245,7 +277,7 @@ Our experiential formula features 5% concentration of Niacinamide – effective 
         <t-testimonials></t-testimonials>
 
     </main>
-    <t-footer></t-footer>
+    <t-footer root-path="../"></t-footer>
     <script type="module" src="../script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>

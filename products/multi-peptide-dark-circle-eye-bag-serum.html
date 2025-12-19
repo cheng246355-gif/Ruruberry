@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <t-header></t-header>
+    <t-header root-path="../"></t-header>
 
     <main class="product-page-main">
         <section class="product-details-section">
@@ -31,17 +31,13 @@
                         alt="Main Product Image" id="main-product-image">
                 </div>
                 <div class="thumbnails">
-                    <img src="../images/Products/DarkCircle_01-1200x1600.jpg" alt="Thumbnail 1"
-                        class="thumbnail active"
+                    <img src="../images/Products/DarkCircle_01-1200x1600.jpg" alt="Thumbnail 1" class="thumbnail active"
                         data-large-src="../images/Products/DarkCircle_01-1200x1600.jpg">
-                    <img src="../images/Products/DarkCircle_01-1200x1600.jpg" alt="Thumbnail 2"
-                        class="thumbnail"
+                    <img src="../images/Products/DarkCircle_01-1200x1600.jpg" alt="Thumbnail 2" class="thumbnail"
                         data-large-src="../images/Products/DarkCircle_01-1200x1600.jpg">
-                    <img src="../images/Products/DarkCircle_01-1200x1600.jpg" alt="Thumbnail 3"
-                        class="thumbnail"
+                    <img src="../images/Products/DarkCircle_01-1200x1600.jpg" alt="Thumbnail 3" class="thumbnail"
                         data-large-src="../images/Products/DarkCircle_01-1200x1600.jpg">
-                    <img src="../images/Products/DarkCircle_01-1200x1600.jpg" alt="Thumbnail 4"
-                        class="thumbnail"
+                    <img src="../images/Products/DarkCircle_01-1200x1600.jpg" alt="Thumbnail 4" class="thumbnail"
                         data-large-src="../images/Products/DarkCircle_01-1200x1600.jpg">
                 </div>
             </div>
@@ -50,7 +46,15 @@
                 <p class="stock-status">In Stock</p>
                 <p class="product-code">Product Code: 9551003171019</p>
                 <p class="price">RM 78.00</p>
-                <div class="key-ingredients"><p><strong>Key Ingredients</strong></p><p>- Acetyl Hexapeptide-8 (Botox-like effect) - Caffeine - Panthenol (Vitamin B5) - Allantoin RECOMMENDED FOR:</p></div>
+                <div class="key-ingredients">
+                    <p><strong>Key Ingredients</strong></p>
+                    <ul>
+                        <li>Acetyl Hexapeptide-8 (Botox-like effect)</li>
+                        <li>Caffeine</li>
+                        <li>Panthenol (Vitamin B5)</li>
+                        <li>Allantoin</li>
+                    </ul>
+                </div>
                 <div class="product-actions">
                     <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
                 </div>
@@ -72,28 +76,44 @@
             <div class="description-content">
                 <div class="description-item">
                     <h3>What am i</h3>
-                    <p>A refreshing, revitalising eye gel to brighten and visibly reduce the appearance of dark circles and puffiness, and expression lines while soothing, contouring and rapidly hydrating .</p>
+                    <p>A refreshing, revitalising eye gel to brighten and visibly reduce the appearance of dark circles
+                        and puffiness, and expression lines while soothing, contouring and rapidly hydrating .</p>
                 </div>
                 <div class="description-item">
                     <h3>Why pick me</h3>
-                    <p>Caffeine, a natural antioxidant, has diuretic and vasoconstrictive properties that can help diminish fluid retention, which is a major cause of puffy eyes, and stimulate microcirculation while constricting dilated blood vessels to lessen swelling, redness, and dark shadows under the eyes. In helping to neutralise free radicals, it can also protect your delicate skin from premature aging, boosting elasticity as well as radiance for a well-rested, wide-awake glow . The added Acetyl Hexapeptide-8, a cell-communicating ingredient, works by inhibiting the release of neurotransmitters that initiate and control the intensity of facial muscle contraction, relieving any tension and relaxing the skin to minimise creasing, producing a Botox-like effect. With excellent bioavailability, this safe needle-free alternative is proven effective and far more versatile, aiding in the optimisation of collagen function while creating suppleness . Supported by Panthenol that penetrates the skin well to deliver greater efficacy, at the same time replacing lost hydration and sealing all cracks to maintain a healthy moisture barrier; alongside Allantoin that gently soothes the skin to alleviate overall inflammation, promoting the growth of new cells and facilitating collagen synthesis for that bright-eyed, youthful look .</p>
+                    <p>Caffeine, a natural antioxidant, has diuretic and vasoconstrictive properties that can help
+                        diminish fluid retention, which is a major cause of puffy eyes, and stimulate microcirculation
+                        while constricting dilated blood vessels to lessen swelling, redness, and dark shadows under the
+                        eyes. In helping to neutralise free radicals, it can also protect your delicate skin from
+                        premature aging, boosting elasticity as well as radiance for a well-rested, wide-awake glow .
+                        The added Acetyl Hexapeptide-8, a cell-communicating ingredient, works by inhibiting the release
+                        of neurotransmitters that initiate and control the intensity of facial muscle contraction,
+                        relieving any tension and relaxing the skin to minimise creasing, producing a Botox-like effect.
+                        With excellent bioavailability, this safe needle-free alternative is proven effective and far
+                        more versatile, aiding in the optimisation of collagen function while creating suppleness .
+                        Supported by Panthenol that penetrates the skin well to deliver greater efficacy, at the same
+                        time replacing lost hydration and sealing all cracks to maintain a healthy moisture barrier;
+                        alongside Allantoin that gently soothes the skin to alleviate overall inflammation, promoting
+                        the growth of new cells and facilitating collagen synthesis for that bright-eyed, youthful look
+                        .</p>
                 </div>
-                <div id="key-ingredients" class="description-item"><h3>Key Ingredients</h3>
-<p>- Acetyl Hexapeptide-8 (Botox-like effect) - Caffeine - Panthenol (Vitamin B5) - Allantoin RECOMMENDED FOR:</p></div>
+                <div id="key-ingredients" class="description-item">
+                    <h3>Key Ingredients</h3>
+                    <ul>
+                        <li>Acetyl Hexapeptide-8 (Botox-like effect)</li>
+                        <li>Caffeine</li>
+                        <li>Panthenol (Vitamin B5)</li>
+                        <li>Allantoin</li>
+                    </ul>
+                </div>
                 <div class="description-item">
                     <h3>Recommend for:</h3>
                     <ul>
                         <li>
-                            <strong>Oily, acne-prone skin</strong>
-                            <p>Looking to keep their complexion clear and shine-free.</p>
+                            <strong>Non-genetic panda eyes</strong>
                         </li>
                         <li>
-                            <strong>Mature, aging skin</strong>
-                            <p>Looking to repair past signs of damage and restore vitality.</p>
-                        </li>
-                        <li>
-                            <strong>Dry, sensitive skin</strong>
-                            <p>Looking to replenish skin and prevent premature skin aging.</p>
+                            <strong>Anyone wanting to perk up the eye area</strong>
                         </li>
                     </ul>
                 </div>
@@ -113,6 +133,28 @@
                         will
                         only
                         occur under extreme heat over extended periods of time.</p>
+                </div>
+                <div class="description-item">
+                    <h3>How to Use</h3>
+                    <p>The skin around our eyes, surrounded by very few sebaceous glands and much thinner, is the most
+                        fragile among the rest, and often one of the first to show the earliest signs of damage and
+                        aging, which is why it’s important that we pay extra attention and care to them. Mishandling of
+                        the skin around our eyes, like aggressive removal of eye makeup or heavily dragging products
+                        along the eye contour, can not only cause irritation but also aggravate many pre-existing
+                        conditions, making discoloration look worse and resulting in more laxity.</p>
+                    <p>When it comes to applying eye treatment, using the ring finger is the best, as it naturally has
+                        the lightest and most gentle touch. In such a delicate area impacted by constant movement and
+                        dryness, always work your eyecare into the skin using dabbing or tapping motions, as opposed to
+                        vigorous rubbing which can stretch out the skin and encourage wrinkling. Besides rejuvenating
+                        and providing the eye area with ample hydration, this can also better prepare the skin for
+                        makeup and help concealer as well as foundation apply more evenly.</p>
+                    <p>While our eye gel can be used day and night, you may prefer this lighter, more revitalising
+                        treatment option in the AM to wake up tired-looking eyes after a restless night without weighing
+                        the skin down, at the same time creating a more illuminating base under makeup.</p>
+                </div>
+                <div class="description-item">
+                    <h3>Cautions</h3>
+                    <p>Always do a patch test first. Discontinue use and consult a doctor if irritation occurs.</p>
                 </div>
             </div>
         </section>
@@ -135,10 +177,10 @@
                     <a href="product.html">
                         <div class="product-image">
                             <div class="product-badge badge-hot">Hot</div>
-                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image main-image" loading="lazy">
-                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image hover-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image main-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image hover-image" loading="lazy">
                         </div>
                         <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                     </a>
@@ -240,7 +282,7 @@
         <t-testimonials></t-testimonials>
 
     </main>
-    <t-footer></t-footer>
+    <t-footer root-path="../"></t-footer>
     <script type="module" src="../script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>

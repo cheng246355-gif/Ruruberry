@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <t-header></t-header>
+    <t-header root-path="../"></t-header>
 
     <main class="product-page-main">
         <section class="product-details-section">
@@ -31,17 +31,13 @@
                         alt="Main Product Image" id="main-product-image">
                 </div>
                 <div class="thumbnails">
-                    <img src="../images/Products/18EAA_01-1200x1600.jpg" alt="Thumbnail 1"
-                        class="thumbnail active"
+                    <img src="../images/Products/18EAA_01-1200x1600.jpg" alt="Thumbnail 1" class="thumbnail active"
                         data-large-src="../images/Products/18EAA_01-1200x1600.jpg">
-                    <img src="../images/Products/18EAA_01-1200x1600.jpg" alt="Thumbnail 2"
-                        class="thumbnail"
+                    <img src="../images/Products/18EAA_01-1200x1600.jpg" alt="Thumbnail 2" class="thumbnail"
                         data-large-src="../images/Products/18EAA_01-1200x1600.jpg">
-                    <img src="../images/Products/18EAA_01-1200x1600.jpg" alt="Thumbnail 3"
-                        class="thumbnail"
+                    <img src="../images/Products/18EAA_01-1200x1600.jpg" alt="Thumbnail 3" class="thumbnail"
                         data-large-src="../images/Products/18EAA_01-1200x1600.jpg">
-                    <img src="../images/Products/18EAA_01-1200x1600.jpg" alt="Thumbnail 4"
-                        class="thumbnail"
+                    <img src="../images/Products/18EAA_01-1200x1600.jpg" alt="Thumbnail 4" class="thumbnail"
                         data-large-src="../images/Products/18EAA_01-1200x1600.jpg">
                 </div>
             </div>
@@ -50,7 +46,15 @@
                 <p class="stock-status">In Stock</p>
                 <p class="product-code">Product Code: 9551003171019</p>
                 <p class="price">RM 88.00</p>
-                <div class="key-ingredients"><p><strong>Key Ingredients</strong></p><p></p></div>
+                <div class="key-ingredients">
+                    <p><strong>Key Ingredients</strong></p>
+                    <ul>
+                        <li>Ethyl Ascorbic Acid [18%]</li>
+                        <li>Ferulic Acid</li>
+                        <li>Glutathione</li>
+                        <li>Superoxide Dismutase (SOD)</li>
+                    </ul>
+                </div>
                 <div class="product-actions">
                     <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
                 </div>
@@ -72,49 +76,67 @@
             <div class="description-content">
                 <div class="description-item">
                     <h3>What am i</h3>
-                    <p>An advanced formula (pH 4.6±) supercharged with 20.5% pure antioxidants (including 18% stabilised Vitamin C) in a potent serum base to renew, rebuild and revitalise the skin more robustly for next-generation anti-aging, blemish-clearing results.</p>
+                    <p>An advanced formula (pH 4.6±) supercharged with 20.5% pure antioxidants (including 18% stabilised
+                        Vitamin C) in a potent serum base to renew, rebuild and revitalise the skin more robustly for
+                        next-generation anti-aging, blemish-clearing results.</p>
                 </div>
                 <div class="description-item">
                     <h3>Why pick me</h3>
-                    <p>Ethyl Ascorbic Acid (EAA), a gentle-and-air stable Ascorbic Acid derivative, is water- and oil-soluble with a simple molecular structure and efficient transdermal activity to offer consistent Vitamin C benefits without irritating, be it on re-texturizing and evening out your complexion or for improved skin elasticity and firmness, excellent at correcting a plethora of skin concerns from acne to fine lines/wrinkles altogether.
-Supported by Ferulic Acid, which can not only further stabilise it but also help potentiate their joint antioxidant effects in addition to minimizing the damage or aftereffects from everyday pollution and radiation; and Glutathione, which aids in the metabolism of toxins and treatment of dark spots through inhibiting the synthesis and agglutination of pigment-causing melanin in skin while repairing any oxidatively damaged DNA in cells.
-Reinforced with Superoxide Dismutase (SOD), the first line of defence against free radical damage, an oxyradical-scavenging antioxidant enzyme in the body crucial to cellular health that smartly protects your skin against visible signs of aging by breaking down harmful superoxide radicals down into less destructive molecules on top of recharging as well as energising the skin for a remarkably bright, youthful glow.</p>
+                    <p>Ethyl Ascorbic Acid (EAA), a gentle-and-air stable Ascorbic Acid derivative, is water- and
+                        oil-soluble with a simple molecular structure and efficient transdermal activity to offer
+                        consistent Vitamin C benefits without irritating, be it on re-texturizing and evening out your
+                        complexion or for improved skin elasticity and firmness, excellent at correcting a plethora of
+                        skin concerns from acne to fine lines/wrinkles altogether.
+                        Supported by Ferulic Acid, which can not only further stabilise it but also help potentiate
+                        their joint antioxidant effects in addition to minimizing the damage or aftereffects from
+                        everyday pollution and radiation; and Glutathione, which aids in the metabolism of toxins and
+                        treatment of dark spots through inhibiting the synthesis and agglutination of pigment-causing
+                        melanin in skin while repairing any oxidatively damaged DNA in cells.
+                        Reinforced with Superoxide Dismutase (SOD), the first line of defence against free radical
+                        damage, an oxyradical-scavenging antioxidant enzyme in the body crucial to cellular health that
+                        smartly protects your skin against visible signs of aging by breaking down harmful superoxide
+                        radicals down into less destructive molecules on top of recharging as well as energising the
+                        skin for a remarkably bright, youthful glow.</p>
                 </div>
-                <div id="key-ingredients" class="description-item"><h3>Key Ingredients</h3>
-<p></p></div>
+                <div id="key-ingredients" class="description-item">
+                    <h3>Key Ingredients</h3>
+                    <ul>
+                        <li>Ethyl Ascorbic Acid [18%]</li>
+                        <li>Ferulic Acid</li>
+                        <li>Glutathione</li>
+                        <li>Superoxide Dismutase (SOD)</li>
+                    </ul>
+                </div>
                 <div class="description-item">
                     <h3>Recommend for:</h3>
                     <ul>
                         <li>
-                            <strong>Oily, acne-prone skin</strong>
-                            <p>Looking to keep their complexion clear and shine-free.</p>
+                            <strong>All skin types</strong>
+                            <p>To vastly improve the skin’s look, feel and barrier function in pursuit of a naturally
+                                smooth, radiant and healthy complexion.</p>
                         </li>
                         <li>
                             <strong>Mature, aging skin</strong>
-                            <p>Looking to repair past signs of damage and restore vitality.</p>
+                            <p>To immediately boost collagen, lighten pigmentation and soften creases in skin while
+                                mitigating any oxidative stress-induced damage or premature/accelerated aging.</p>
                         </li>
                         <li>
-                            <strong>Dry, sensitive skin</strong>
-                            <p>Looking to replenish skin and prevent premature skin aging.</p>
+                            <strong>Dull, blemished skin</strong>
+                            <p>To visibly reduce the size, depth and intensity of existing acne scars/discoloured skin
+                                patches while preventing future breakouts or flareups from occurring.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="description-item">
                     <h3>Good to Know</h3>
-                    <p>It is actually perfectly safe and even beneficial to mix both Niacinamide and Sodium
-                        Ascorbyl
-                        Phosphate, either together in the same product or combined from layering different
-                        products. The
-                        worries about rendering them ineffective, resulting in a dreaded yellow solution,
-                        are
-                        fairly
-                        unjustified as that is merely a product of a harmless charge-transfer interaction;
-                        while
-                        they
-                        can in certain condition create Niacin, leading to a possible flush, that reaction
-                        will
-                        only
-                        occur under extreme heat over extended periods of time.</p>
+                    <p>Ethyl Ascorbic Acid (EAA) is a very stable and promising form of Vitamin C, which unique
+                        molecular structure enables it to penetrate the skin’s deeper layers without causing irritation.
+                        Unlike traditional Ascorbic Acid, our EAA formula is highly compatible with other active
+                        ingredients and can be layered over easily without experiencing residue.</p>
+                    <p>If your current skincare routine already includes any different actives, we advise that you take
+                        breaks in between (about 1-2 mins) products to significantly enhance the absorption rate of each
+                        for their maximal efficacy. Depending on the application frequency, skin reaction among
+                        different individuals may vary upon the layering of different, varying textures.</p>
                 </div>
             </div>
         </section>
@@ -137,10 +159,10 @@ Reinforced with Superoxide Dismutase (SOD), the first line of defence against fr
                     <a href="product.html">
                         <div class="product-image">
                             <div class="product-badge badge-hot">Hot</div>
-                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image main-image" loading="lazy">
-                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image hover-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image main-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image hover-image" loading="lazy">
                         </div>
                         <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                     </a>
@@ -242,7 +264,7 @@ Reinforced with Superoxide Dismutase (SOD), the first line of defence against fr
         <t-testimonials></t-testimonials>
 
     </main>
-    <t-footer></t-footer>
+    <t-footer root-path="../"></t-footer>
     <script type="module" src="../script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>

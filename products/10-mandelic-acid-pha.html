@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <t-header></t-header>
+    <t-header root-path="../"></t-header>
 
     <main class="product-page-main">
         <section class="product-details-section">
@@ -32,16 +32,12 @@
                 </div>
                 <div class="thumbnails">
                     <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Thumbnail 1"
-                        class="thumbnail active"
+                        class="thumbnail active" data-large-src="../images/Products/10Mandelic Acid01-1200x1600.jpg">
+                    <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Thumbnail 2" class="thumbnail"
                         data-large-src="../images/Products/10Mandelic Acid01-1200x1600.jpg">
-                    <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Thumbnail 2"
-                        class="thumbnail"
+                    <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Thumbnail 3" class="thumbnail"
                         data-large-src="../images/Products/10Mandelic Acid01-1200x1600.jpg">
-                    <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Thumbnail 3"
-                        class="thumbnail"
-                        data-large-src="../images/Products/10Mandelic Acid01-1200x1600.jpg">
-                    <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Thumbnail 4"
-                        class="thumbnail"
+                    <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Thumbnail 4" class="thumbnail"
                         data-large-src="../images/Products/10Mandelic Acid01-1200x1600.jpg">
                 </div>
             </div>
@@ -50,7 +46,14 @@
                 <p class="stock-status">In Stock</p>
                 <p class="product-code">Product Code: 9551003171019</p>
                 <p class="price">RM 68.00</p>
-                <div class="key-ingredients"><p><strong>Key Ingredients</strong></p><p>-<br>Mandelic Acid [10%<br>]<br>- Panthenol (Vitamin B5)<br>-<br>SEPITONIC™ (Magnesium Aspartate-Zinc Gluconate-Copper Gluconate<br>)</p></div>
+                <div class="key-ingredients">
+                    <p><strong>Key Ingredients</strong></p>
+                    <ul>
+                        <li>Mandelic Acid [10%]</li>
+                        <li>Panthenol (Vitamin B5)</li>
+                        <li>SEPITONIC™ (Magnesium Aspartate, Zinc Gluconate, Copper Gluconate)</li>
+                    </ul>
+                </div>
                 <div class="product-actions">
                     <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
                 </div>
@@ -72,53 +75,69 @@
             <div class="description-content">
                 <div class="description-item">
                     <h3>What am i</h3>
-                    <p>A tone-refining, re-texturizing serum that gently exfoliates and treats stubborn pigmentation, persistent breakouts, visible fine lines and wrinkles while improving skin oxygenation to quickly resuscitate a devitalised complexion
-.</p>
+                    <p>A tone-refining, re-texturizing serum that gently exfoliates and treats stubborn pigmentation,
+                        persistent breakouts, visible fine lines and wrinkles while improving skin oxygenation to
+                        quickly resuscitate a devitalised complexion
+                        .</p>
                 </div>
                 <div class="description-item">
                     <h3>Why pick me</h3>
-                    <p>Mandelic Acid, a water-soluble alpha hydroxy acid (AHA) derived from bitter almonds, is a proven versatile ingredient with natural micro-exfoliating, anti-bacterial and anti-inflammatory properties that combine to offer wondrous glow-giving, skin-clearing and anti-aging benefits all at once. This non-abrasive treatment works by dissolving the glue-like bond between impacted cells to speed up its turnover, stimulating as well as strengthening collagen while resurfacing the skin until completely replaced by a new, unblemished layer
-.
-With a bigger molecular structure and therefore slower penetration rate, Mandelic Acid is also less likely to cause irritation, redness or flakiness that some other AHAs might trigger in sensitive, acneic skin. In addition, our formula also incorporated Panthenol, a pro-vitamin B5 known for its repairing, soothing and moisturising effects, to promote wound healing through increased fibroblast proliferation and help with skin barrier restoration while adding elasticity as well as hydration
-.
-Further supported by SEPITONIC™, an active multimineral anti-glycation, chrono-energizing complex, that acts as an oxidation stress shield by blocking free radical and functions to safeguard the dermis from glycation process; at the same time boosting cellular respiration by increasing the oxygen immediately available to the skin in order to generate a brighter, smoother and firmer complexion
-.</p>
+                    <p>Mandelic Acid, a water-soluble alpha hydroxy acid (AHA) derived from bitter almonds, is a proven
+                        versatile ingredient with natural micro-exfoliating, anti-bacterial and anti-inflammatory
+                        properties that combine to offer wondrous glow-giving, skin-clearing and anti-aging benefits all
+                        at once. This non-abrasive treatment works by dissolving the glue-like bond between impacted
+                        cells to speed up its turnover, stimulating as well as strengthening collagen while resurfacing
+                        the skin until completely replaced by a new, unblemished layer
+                        .
+                        With a bigger molecular structure and therefore slower penetration rate, Mandelic Acid is also
+                        less likely to cause irritation, redness or flakiness that some other AHAs might trigger in
+                        sensitive, acneic skin. In addition, our formula also incorporated Panthenol, a pro-vitamin B5
+                        known for its repairing, soothing and moisturising effects, to promote wound healing through
+                        increased fibroblast proliferation and help with skin barrier restoration while adding
+                        elasticity as well as hydration
+                        .
+                        Further supported by SEPITONIC™, an active multimineral anti-glycation, chrono-energizing
+                        complex, that acts as an oxidation stress shield by blocking free radical and functions to
+                        safeguard the dermis from glycation process; at the same time boosting cellular respiration by
+                        increasing the oxygen immediately available to the skin in order to generate a brighter,
+                        smoother and firmer complexion
+                        .</p>
                 </div>
-                <div id="key-ingredients" class="description-item"><h3>Key Ingredients</h3>
-<p>-<br>Mandelic Acid [10%<br>]<br>- Panthenol (Vitamin B5)<br>-<br>SEPITONIC™ (Magnesium Aspartate-Zinc Gluconate-Copper Gluconate<br>)</p></div>
+                <div id="key-ingredients" class="description-item">
+                    <h3>Key Ingredients</h3>
+                    <ul>
+                        <li>Mandelic Acid [10%]</li>
+                        <li>Panthenol (Vitamin B5)</li>
+                        <li>SEPITONIC™ (Magnesium Aspartate, Zinc Gluconate, Copper Gluconate)</li>
+                    </ul>
+                </div>
                 <div class="description-item">
                     <h3>Recommend for:</h3>
                     <ul>
                         <li>
-                            <strong>Oily, acne-prone skin</strong>
-                            <p>Looking to keep their complexion clear and shine-free.</p>
+                            <strong>All skin types</strong>
+                            <p>Looking to even out a discoloured skin tone and bumpy textures while softening existing
+                                fine lines and preventing further creasing of deep-set wrinkles for a more youthful
+                                glow.</p>
                         </li>
                         <li>
-                            <strong>Mature, aging skin</strong>
-                            <p>Looking to repair past signs of damage and restore vitality.</p>
-                        </li>
-                        <li>
-                            <strong>Dry, sensitive skin</strong>
-                            <p>Looking to replenish skin and prevent premature skin aging.</p>
+                            <strong>Sensitive, acneic skin</strong>
+                            <p>Wanting a mild exfoliant that is less harsh than traditional AHAs to eradicate dark marks
+                                left behind by inflammatory acne as well as to reduce the frequency and severity of
+                                future flare-ups and breakouts.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="description-item">
-                    <h3>Good to Know</h3>
-                    <p>It is actually perfectly safe and even beneficial to mix both Niacinamide and Sodium
-                        Ascorbyl
-                        Phosphate, either together in the same product or combined from layering different
-                        products. The
-                        worries about rendering them ineffective, resulting in a dreaded yellow solution,
-                        are
-                        fairly
-                        unjustified as that is merely a product of a harmless charge-transfer interaction;
-                        while
-                        they
-                        can in certain condition create Niacin, leading to a possible flush, that reaction
-                        will
-                        only
-                        occur under extreme heat over extended periods of time.</p>
+                    <h3>How to Use</h3>
+                    <p>Apply 1-3 drops onto clean skin and finish with a moisturizer. Best used at night, otherwise
+                        always followed by a sunscreen of SPF30 or greater when applied during the day.</p>
+                </div>
+                <div class="description-item">
+                    <h3>Cautions</h3>
+                    <p>Do not use on peeling, compromised or broken skin. Avoid contact with eyes. Always do a patch
+                        test first. If irritation occurs during use, especially after prolonged or repeated use, stop
+                        use immediately and consult a doctor. Store in a cool place.</p>
                 </div>
             </div>
         </section>
@@ -141,10 +160,10 @@ Further supported by SEPITONIC™, an active multimineral anti-glycation, chrono
                     <a href="product.html">
                         <div class="product-image">
                             <div class="product-badge badge-hot">Hot</div>
-                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image main-image" loading="lazy">
-                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image hover-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image main-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image hover-image" loading="lazy">
                         </div>
                         <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                     </a>
@@ -246,7 +265,7 @@ Further supported by SEPITONIC™, an active multimineral anti-glycation, chrono
         <t-testimonials></t-testimonials>
 
     </main>
-    <t-footer></t-footer>
+    <t-footer root-path="../"></t-footer>
     <script type="module" src="../script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>

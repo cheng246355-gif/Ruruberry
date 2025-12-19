@@ -17,7 +17,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background: rgba(var(--color-white-rgb), 0.35);
-    /* Use RGB for transparency */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 10px;
@@ -148,7 +147,6 @@ nav {
     z-index: 1001;
     font-size: var(--icon-size-lg);
     color: var(--color-dark);
-    /* Ensure explicit color */
 }
 
 .mobile-only {
@@ -170,21 +168,16 @@ nav {
         top: 0;
         right: -100%;
         width: 100%;
-        /* Full width for a more immersive feel on mobile, or keep distinct drawer */
         max-width: 400px;
-        /* Limit width on larger tablets */
         height: 100vh;
         background: rgba(255, 255, 255, 0.85);
-        /* semi-transparent white */
         backdrop-filter: blur(20px);
-        /* Glassmorphism */
         -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 40px 20px;
         transition: right 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-        /* Smoother bezier curve */
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
         z-index: 1000;
     }
@@ -196,7 +189,6 @@ nav {
 
     .nav-menu a {
         font-size: 1.5rem;
-        /* Larger font for mobile */
         margin: 15px 0;
         font-weight: var(--fw-semibold);
         color: var(--color-dark);
@@ -205,7 +197,6 @@ nav {
         transition: opacity 0.4s ease, transform 0.4s ease;
     }
 
-    /* Staggered animation for links when menu is active */
     .nav-menu.nav-active a {
         opacity: 1;
         transform: translateY(0);
@@ -229,10 +220,8 @@ nav {
 
     .header-icons {
         display: none;
-        /* Hide icons in mobile view to simplify header */
     }
 
-    /* When icons are moved inside nav-menu via JS */
     .nav-menu .header-icons {
         display: flex;
         margin-top: 30px;
@@ -245,7 +234,6 @@ nav {
         opacity: 1;
         transform: translateY(0);
         display: flex;
-        /* Ensure they are flex when inside menu */
     }
 
     .header-controls {
@@ -265,7 +253,6 @@ nav {
         border-radius: 50%;
         transition: background-color 0.3s ease;
         font-size: 32px;
-        /* Standard large icon size */
     }
 
     .hamburger-menu:active {
@@ -280,21 +267,16 @@ nav {
 @media (max-width: 480px) {
     header {
         width: calc(100% - 20px);
-        /* Reduce overall header width */
         padding: 10px 15px;
-        /* Smaller padding for very small screens */
         top: 10px;
-        /* Adjust top position */
     }
 
     .logo img.logo-img {
         max-width: 120px;
-        /* Smaller logo for mobile */
     }
 
     .nav-menu {
         width: 100%;
-        /* Full width for mobile menu */
     }
 }
 

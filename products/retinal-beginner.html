@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <t-header></t-header>
+    <t-header root-path="../"></t-header>
 
     <main class="product-page-main">
         <section class="product-details-section">
@@ -32,16 +32,12 @@
                 </div>
                 <div class="thumbnails">
                     <img src="../images/Products/Crystal Beginner_01-1200x1600.jpg" alt="Thumbnail 1"
-                        class="thumbnail active"
+                        class="thumbnail active" data-large-src="../images/Products/Crystal Beginner_01-1200x1600.jpg">
+                    <img src="../images/Products/Crystal Beginner_01-1200x1600.jpg" alt="Thumbnail 2" class="thumbnail"
                         data-large-src="../images/Products/Crystal Beginner_01-1200x1600.jpg">
-                    <img src="../images/Products/Crystal Beginner_01-1200x1600.jpg" alt="Thumbnail 2"
-                        class="thumbnail"
+                    <img src="../images/Products/Crystal Beginner_01-1200x1600.jpg" alt="Thumbnail 3" class="thumbnail"
                         data-large-src="../images/Products/Crystal Beginner_01-1200x1600.jpg">
-                    <img src="../images/Products/Crystal Beginner_01-1200x1600.jpg" alt="Thumbnail 3"
-                        class="thumbnail"
-                        data-large-src="../images/Products/Crystal Beginner_01-1200x1600.jpg">
-                    <img src="../images/Products/Crystal Beginner_01-1200x1600.jpg" alt="Thumbnail 4"
-                        class="thumbnail"
+                    <img src="../images/Products/Crystal Beginner_01-1200x1600.jpg" alt="Thumbnail 4" class="thumbnail"
                         data-large-src="../images/Products/Crystal Beginner_01-1200x1600.jpg">
                 </div>
             </div>
@@ -50,7 +46,15 @@
                 <p class="stock-status">In Stock</p>
                 <p class="product-code">Product Code: 9551003171019</p>
                 <p class="price">RM 78.00</p>
-                <div class="key-ingredients"><p><strong>Key Ingredients</strong></p><p></p></div>
+                <div class="key-ingredients">
+                    <p><strong>Key Ingredients</strong></p>
+                    <ul>
+                        <li>Retinaldehyde (0.02%)</li>
+                        <li>Ectoin (1%)</li>
+                        <li>Superoxide Dismutase</li>
+                        <li>SEPITONIC™ (Magnesium Aspartate, Zinc Gluconate, Copper Gluconate)</li>
+                    </ul>
+                </div>
                 <div class="product-actions">
                     <a href="account.html#cart" class="btn-buy-it-now">Buy it now</a>
                 </div>
@@ -71,48 +75,66 @@
             <h2>Product Description</h2>
             <div class="description-content">
                 <div class="description-item">
-                    <h3>What am i</h3>
-                    <p>Information not available.</p>
+                    <h3>What am I?</h3>
+                    <p>Beginner Level - A powerful serum that helps smooth skin, even out tone, and reduce signs of
+                        aging. Mild and gently renews the skin while providing antioxidant protection, making it an
+                        effective step for a healthier, more youthful glow.</p>
                 </div>
                 <div class="description-item">
-                    <h3>Why pick me</h3>
-                    <p>Information not available.</p>
+                    <h3>Why pick me?</h3>
+                    <p>This revolutionary overnight treatment nourishes problematic skin with reparative hydration,
+                        minimizing breakouts and enhancing the appearance of old blemish marks. It refines skin texture
+                        and brightens the complexion. Formulated with Retinaldehyde, Ectoin, Superoxide Dismutase, and
+                        SEPITONIC™, it effectively fades discoloration and evens skin tone for a radiant, glowing look.
+                    </p>
                 </div>
-                <div id="key-ingredients" class="description-item"><h3>Key Ingredients</h3>
-<p></p></div>
+                <div id="key-ingredients" class="description-item">
+                    <h3>Key Ingredients</h3>
+                    <ul>
+                        <li>Retinaldehyde (0.02%)</li>
+                        <li>Ectoin (1%)</li>
+                        <li>Superoxide Dismutase</li>
+                        <li>SEPITONIC™ (Magnesium Aspartate, Zinc Gluconate, Copper Gluconate)</li>
+                    </ul>
+                </div>
                 <div class="description-item">
                     <h3>Recommend for:</h3>
                     <ul>
                         <li>
-                            <strong>Oily, acne-prone skin</strong>
-                            <p>Looking to keep their complexion clear and shine-free.</p>
+                            <strong>All skin types</strong>
+                            <p>To vastly improve the skin’s look, feel and barrier function in pursuit of a naturally
+                                smooth, radiant and healthy complexion.</p>
                         </li>
                         <li>
                             <strong>Mature, aging skin</strong>
-                            <p>Looking to repair past signs of damage and restore vitality.</p>
+                            <p>To immediately boost collagen, lighten pigmentation and soften creases in skin while
+                                mitigating any oxidative stress-induced damage or premature/accelerated aging.</p>
                         </li>
                         <li>
-                            <strong>Dry, sensitive skin</strong>
-                            <p>Looking to replenish skin and prevent premature skin aging.</p>
+                            <strong>Dull, blemished skin</strong>
+                            <p>To visibly reduce the size, depth and intensity of existing acne scars/discoloured skin
+                                patches while preventing future breakouts or flareups from occurring.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="description-item">
-                    <h3>Good to Know</h3>
-                    <p>It is actually perfectly safe and even beneficial to mix both Niacinamide and Sodium
-                        Ascorbyl
-                        Phosphate, either together in the same product or combined from layering different
-                        products. The
-                        worries about rendering them ineffective, resulting in a dreaded yellow solution,
-                        are
-                        fairly
-                        unjustified as that is merely a product of a harmless charge-transfer interaction;
-                        while
-                        they
-                        can in certain condition create Niacin, leading to a possible flush, that reaction
-                        will
-                        only
-                        occur under extreme heat over extended periods of time.</p>
+                    <h3>How to Use</h3>
+                    <p>After cleansing and toning, dispense 1 pump onto the palm of your hands before patting them onto
+                        your face. Add a couple more pump if intending to apply across the neck and chest area. Finish
+                        with a moisturizer, ideally alongside SPF 30 or greater when used during the day.</p>
+                    <p><strong>For new retinoid users:</strong> use two days on, two days off. Work your way up to every
+                        other day, then to daily, evening use. Follow with a gentle oil or moisturiser.</p>
+                    <p><strong>For advanced retinoid users:</strong> use daily, in the evenings. Follow with a gentle
+                        oil or moisturiser.</p>
+                    <p><strong>For sensitive skin:</strong> Apply a few drops of a gentle, moisturising oil to your skin
+                        before applying the serum.</p>
+                </div>
+                <div class="description-item">
+                    <h3>Cautions</h3>
+                    <p>Do not use on irritated or sensitive skin. If irritation, rash, or patchy dry skin develops at or
+                        around the site of application during use, especially after prolonged or repeated use, stop use
+                        immediately and consult a doctor. Store in a cool place.<br>* Due to the Retinoid content, this
+                        formula is not recommended if pregnant/breastfeeding.</p>
                 </div>
             </div>
         </section>
@@ -135,10 +157,10 @@
                     <a href="product.html">
                         <div class="product-image">
                             <div class="product-badge badge-hot">Hot</div>
-                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image main-image" loading="lazy">
-                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg" alt="Mandelic+PHA Daily Liquid"
-                                class="product-card-image hover-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid01-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image main-image" loading="lazy">
+                            <img src="../images/Products/10Mandelic Acid02-1200x1600.jpg"
+                                alt="Mandelic+PHA Daily Liquid" class="product-card-image hover-image" loading="lazy">
                         </div>
                         <h3 class="product-title">Mandelic+PHA Daily Liquid (30ml)</h3>
                     </a>
@@ -240,7 +262,7 @@
         <t-testimonials></t-testimonials>
 
     </main>
-    <t-footer></t-footer>
+    <t-footer root-path="../"></t-footer>
     <script type="module" src="../script.js"></script>
     <t-return-to-top></t-return-to-top>
 </body>
