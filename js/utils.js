@@ -10,6 +10,19 @@ export function debounce(func, delay) {
     };
 }
 
+// Throttle function to ensure function is called at most once every specified limit
+export function throttle(func, limit) {
+    let inThrottle;
+    return function (...args) {
+        const context = this;
+        if (!inThrottle) {
+            func.apply(context, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    }
+}
+
 /**
  * Waits for an element to appear in the DOM.
  * @param {string} selector - The CSS selector to wait for.

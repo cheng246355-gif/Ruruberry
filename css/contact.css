@@ -151,6 +151,27 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.btn-primary {
+    border: 1px solid var(--color-dark);
+    background-color: transparent;
+    color: var(--color-dark);
+    padding: 16px;
+    font-size: 1.1rem;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 /*==============================================
 #*                                             *
 #*                  MAP SECTION                 *

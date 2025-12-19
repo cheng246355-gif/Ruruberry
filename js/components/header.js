@@ -1,4 +1,4 @@
-import { debounce } from '../utils.js';
+import { throttle } from '../utils.js';
 import { allProducts } from '../products.js';
 
 /**
@@ -17,7 +17,7 @@ export class THeader extends HTMLElement {
         this.searchBtn = null;
         this.searchContainer = null;
         this.searchInput = null;
-        this.debouncedHandleScroll = this.debouncedHandleScroll.bind(this);
+        this.throttledHandleScroll = this.throttledHandleScroll.bind(this);
         this.handleResize = this.handleResize.bind(this);
         this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
         this.toggleSearch = this.toggleSearch.bind(this);
@@ -81,7 +81,7 @@ export class THeader extends HTMLElement {
         this.searchResults = this.querySelector('.search-results');
 
         // Add event listeners
-        window.addEventListener('scroll', this.debouncedHandleScroll);
+        window.addEventListener('scroll', this.throttledHandleScroll);
         window.addEventListener('resize', this.handleResize);
 
         if (this.hamburgerBtn) {
@@ -118,10 +118,23 @@ export class THeader extends HTMLElement {
 
         // Initial check for resize logic
         this.handleResize();
+
+        // Inject favicon if missing
+        this.addFavicon(rootPath);
+    }
+
+    addFavicon(rootPath) {
+        if (!document.querySelector('link[rel="icon"]')) {
+            const link = document.createElement('link');
+            link.rel = 'icon';
+            link.type = 'image/png';
+            link.href = `${rootPath}images/Logo/favicon.png`;
+            document.head.appendChild(link);
+        }
     }
 
     disconnectedCallback() {
-        window.removeEventListener('scroll', this.debouncedHandleScroll);
+        window.removeEventListener('scroll', this.throttledHandleScroll);
         window.removeEventListener('resize', this.handleResize);
         if (this.hamburgerBtn) {
             this.hamburgerBtn.removeEventListener('click', this.handleHamburgerClick);
@@ -182,17 +195,7 @@ export class THeader extends HTMLElement {
             const link = document.createElement('a');
             link.href = `${rootPath}${product.link}`;
 
-            // Allow navigating to specific product with search param if link is generic
-            // But currently product.link is just 'product.html'. 
-            // Ideally it should be 'product.html?id=...' or similar, but for now we just link to product.html
-            // Maybe we can pass the name?
-            // Actually, existing code in shop.js uses just 'product.html'. 
-            // In a real app we'd need specific product pages. 
-            // For now, let's keep it simple or maybe pass the name as query param?
-            // "link": "product.html"
-
-            // Let's modify the link to search for this product in shop page if product page is generic?
-            // Or just link to product.html as defined in data.
+            // Link to product page defined in data
 
             link.innerHTML = `
                 <img src="${rootPath}${product.imageUrl}" alt="${product.name}">
@@ -253,8 +256,8 @@ export class THeader extends HTMLElement {
         }
     }
 
-    // Debounced scroll handler
-    debouncedHandleScroll = debounce(this.handleScroll.bind(this), 10);
+    // Throttled scroll handler
+    throttledHandleScroll = throttle(this.handleScroll.bind(this), 20);
 
     handleScroll() {
         const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;

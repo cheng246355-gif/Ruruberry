@@ -42,7 +42,7 @@ export function initAccountNav() {
                 const targetHash = this.getAttribute('href');
 
                 if (targetHash === '#logout') {
-                    console.log('User logged out');
+                    // console.log('User logged out');
                     // window.location.href = 'index.html';
                     return;
                 }

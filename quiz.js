@@ -389,5 +389,5 @@ function formatConcern(concern) {
 
 // Set initial state
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Skin Quiz App initialized');
+    // App initialized
 });
